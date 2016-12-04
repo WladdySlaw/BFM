@@ -179,9 +179,9 @@ a:hover, a:focus{
 }
 .header .icon__buy_block span{
 	font-size: 14px;
-	font-family: "Sceptika";
+	font-family: "Sceptica";
 	color: #ffffff;
-	bottom: -2px;
+	bottom: 1px;
 	right: 0;
 	position: relative;
 	padding-left: 0;
@@ -3625,7 +3625,7 @@ button.close{
 	padding-top: 100px;
 }
 .decorationRegisterRight.decotationRight{
-	bottom: 56px;
+	bottom: 15px;
 }
 .icon_buy:focus{
 	outline: 0;
