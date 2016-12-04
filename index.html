@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title><Главная></title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="libs/ion.rangeSlider-2.1.4/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="libs/ion.rangeSlider-2.1.4/css/ion.rangeSlider.skinFlat.css" />
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- ! Add jQuery library -->
+    <script type="text/javascript" src="libs/fancyBox/lib/jquery-1.10.2.min.js"></script>
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="libs/fancyBox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqj40ibrbZgrrofyvoSHgN2dc6XuDCrPI&language=ru"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="libs/fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="libs/fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Add Button helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="libs/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="libs/fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="libs/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="libs/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!-- Add Media helper (this is optional) -->
+    <script type="text/javascript" src="libs/fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 header__block">
+                <div class="col-sm-2 header__left_bg"></div>
+                <div class="col-sm-2 header__right_bg"></div>
+                <div class="col-sm-7 header__center_content">
+                    <div class="col-xs-4 header__enter">
+                        <a href="#" class="header__enter_title" data-toggle="modal" data-target="#modal-3">Вход</a>
+                        <a href="#" class="header__reg_title" data-toggle="modal" data-target="#modal-1">Регистрация</a>
+                    </div>
+                    <div class="col-xs-6 header__logo">
+                        <img src="<?= RS ?>img/logo.png" alt="" class="header__logo_img">
+                    </div>
+                    <div class="col-xs-2 header__contacts">
+                        <div class="header__phone_block">
+                            <p class="header__phone">044 404 5126</p>
+                        </div>
+                        <div class="icons__buy_like_block">
+                            <a href="#" class="icon__buy" data-toggle="modal" data-target="#modal-2">
+                                <div class="icon__buy_img_blockBuy"></div>
+                                <div class="icon__buy_block">
+                                    <span>5</span>
+                                </div>
+                            </a>
+                            <a href="<?= RS ?>favourites.php" class="icon__buy">
+                                <div class="icon__buy_img_blockLike"></div>
+                                <div class="icon__buy_block">
+                                    <span>0</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 header__nav navMainPage">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <form class="searchForm searchFormMin">
+                                <button type="button" name="button" class="search__a search__aMin">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                                <input type="input" name="name" class="searchInput searchInputMin searchInputFix" value="" placeholder="Что ищем?">
+                            </form>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class><a href="<?= RS ?>catalog.php">Online Аптека <span class="sr-only">(current)</span></a></li>
+                                <li class><a href="<?= RS ?>infob.php">Инфобюро</a></li>
+                                <li class><a href="<?= RS ?>blog.php">Блог</a></li>
+                                <li class><a href="<?= RS ?>contacts.php">Контакты</a></li>
+                                <li class><a href="#">Франчейзинг</a></li>
+                                <li class>
+                                    <form action="#" name="searchModalForm" id="searchModalForm" method="post" class="searchForm">
+                                        <button type="button" name="button" class="searchCatalogBtn searchHeader" id="searchCatalogInput2">
+                                            <span class="glyphicon glyphicon-search catalogSearchIco" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="searchCatalogBlock searchHeaderBlock">
+                                            <input type="input" name="name" class="searchInput searchInputMin searchInputCatalog" value="" placeholder="Что ищем?">
+                                            <button type="button" name="button" class="searchStart">
+                                                <span class="glyphicon glyphicon-search catalogSearchIco" aria-hidden="true"></span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="bigger_apteka">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="apteka__info_block">
+                <div class="col-xs-12">
+                    <div class="center_block">
+                        <p class="center_block__top_text">Мы - больше чем аптека</p>
+                        <div class="center_block__line"></div>
+                        <p class="center_block__top_text center_block__top_text2">больше<br>чем здоровье</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about_us">
+    <div class="container">
+        <div class="row">
+            <div class="about_us_block">
+                <div class="col-sm-12 about_us_title_block">
+                    <div class="about_us_title wow fadeInLeft"><p>О нас</p></div>
+                </div>
+                <div class="about_us__info">
+                    <div class="col-sm-7 wow fadeInLeft">
+                        <p class="about_us__parag">Сеть фармамаркетов "BFM" начала свою работу на рынке Украины в августе 2006 года. Первые торговые точки были открыты компанией в Киеве, с последующим развитием этой сети на всей территории Украины. На сегодня «Аптека Доброго Дня» представлена почти во всех областях Украины и насчитывает более ста пятидесяти аптек.</p>
+                        <p class="about_us__parag">Национальная фармацевтическая сеть «BFM» - это удобный формат аптечного сервиса: сочетание традиций классической аптеки с быстрым и высококачественным обслуживанием маркета.</p>
+                        <p class="about_us__parag">Аптеки имеют открытую зону самообслуживания, благодаря которой покупатели имеют возможность самостоятельно выбрать подходящий товар для здоровья, получив при этом квалифицированную консульта</p>
+                    </div>
+                    <div class="col-sm-5 osmotr_come_block wow fadeInRight">
+                        <div class="osmotr_come">
+                            <div class="osmotrTextBlock">
+                                <p class="osmotrText" id="osmotrText">задай вопрос</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 icons_info">
+                        <div class="col-sm-3 icons_info__block wow fadeInLeft">
+                            <div class="icons__info_icon"></div>
+                            <div class="icons__info_line"></div>
+                            <p class="icons__info_number">11 000</p>
+                            <p class="icons__info_text">ТОВАРОВ <br>ДЛЯ ЗАКАЗА</p>
+                        </div>
+                        <div class="col-sm-3 icons_info__block wow fadeInLeft">
+                            <div class="icons__info_icon2"></div>
+                            <div class="icons__info_line"></div>
+                            <p class="icons__info_number">17 500</p>
+                            <p class="icons__info_text">клиентов <br>в месяц</p>
+                        </div>
+                        <div class="col-sm-3 icons_info__block wow fadeInLeft">
+                            <div class="icons__info_icon3"></div>
+                            <div class="icons__info_line"></div>
+                            <p class="icons__info_number">100%</p>
+                            <p class="icons__info_text">сертифицировання <br>продукция</p>
+                        </div>
+                        <div class="col-sm-3 icons_info__block wow fadeInLeft">
+                            <div class="icons__info_icon4"></div>
+                            <div class="icons__info_line"></div>
+                            <p class="icons__info_number">11 000</p>
+                            <p class="icons__info_text">специалистов<br>работают для вас<br>в сети BFM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider wow zoomIn">
+    <div id="owl-demo" class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="carousel__items">
+                <div class="carouselPic"></div>
+                <div class="carousel__text">
+                    <div class="reviewerInfo">
+                        <p class="reviewerName">Дмитрий Анатольевич</p>
+                        <p class="reviewerPost">врач терапевт</p>
+                    </div>
+                    <div class="quote_1"></div>
+                    <p class="carousel__main_text">Очень хорошая аптека! Вежливые заботливые сотрудники. Полный ассортимент! Хорошие скидки. Быстрая доставка прямо домой! Согласна с предыдущим отзывом: отсутствие платежного терминала у курьера затрудняет оплату.</p>
+                    <div class="quote_2"></div>
+                </div>
+                <div class="sliderImg"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel__items">
+                <div class="carouselPic carouselPic2"></div>
+                <div class="carousel__text">
+                    <div class="reviewerInfo">
+                        <p class="reviewerName">Дмитрий Анатольевич</p>
+                        <p class="reviewerPost">врач терапевт</p>
+                    </div>
+                    <div class="quote_1"></div>
+                    <p class="carousel__main_text">Очень хорошая аптека! Вежливые заботливые сотрудники. Полный ассортимент! Хорошие скидки. Быстрая доставка прямо домой! Согласна с предыдущим отзывом: отсутствие платежного терминала у курьера затрудняет оплату.</p>
+                    <div class="quote_2"></div>
+                </div>
+                <div class="sliderImg"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel__items">
+                <div class="carouselPic carouselPic3"></div>
+                <div class="carousel__text">
+                    <div class="reviewerInfo">
+                        <p class="reviewerName">Дмитрий Анатольевич</p>
+                        <p class="reviewerPost">врач терапевт</p>
+                    </div>
+                    <div class="quote_1"></div>
+                    <p class="carousel__main_text">Очень хорошая аптека! Вежливые заботливые сотрудники. Полный ассортимент! Хорошие скидки. Быстрая доставка прямо домой! Согласна с предыдущим отзывом: отсутствие платежного терминала у курьера затрудняет оплату.</p>
+                    <div class="quote_2"></div>
+                </div>
+                <div class="sliderImg"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why__we">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 why__we_wrap wow slideInLeft">
+                <div class="col-md-4">
+                    <div class="why__we_pic">
+                        <p class="why__we_num">1</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="why__we_title">Профессионализм</p>
+                    <div class="why__we_line"></div>
+                    <p class="why__we_text">В нашей команде профессиональные фармацевты и провизоры</p>
+                </div>
+            </div>
+            <div class="col-md-6 why__we_wrap wow slideInRight">
+                <div class="col-md-4">
+                    <div class="why__we_pic why__we_pic2">
+                        <p class="why__we_num">2</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="why__we_title">Большой выбор</p>
+                    <div class="why__we_line"></div>
+                    <p class="why__we_text">Широкий ассортимент, как отечественных, так и зарубежных препаратов</p>
+                </div>
+            </div>
+            <div class="col-md-6 why__we_wrap wow slideInLeft">
+                <div class="col-md-4">
+                    <div class="why__we_pic why__we_pic3">
+                        <p class="why__we_num">3</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="why__we_title">Доставка</p>
+                    <div class="why__we_line"></div>
+                    <p class="why__we_text">различные Удобные для вас варианты доставки</p>
+                </div>
+            </div>
+            <div class="col-md-6 why__we_wrap wow slideInRight">
+                <div class="col-md-4">
+                    <div class="why__we_pic why__we_pic5">
+                        <p class="why__we_num">4</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p class="why__we_title">консультация 24/7</p>
+                    <div class="why__we_line"></div>
+                    <p class="why__we_text">мы предоставляем квалифицированную консультацию в любое время</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="footer_top col-sm-12">
+                <div class="col-sm-6 footer__top_block1" >
+                    <div class="footer__logo"></div>
+                    <div class="footer__contacts">
+                        <p class="footer__contacts_phone"><span>044 </span>4045 126</p>
+                        <p class="footer__contacts_adress">Киев, ул. Героев Севастополя, 30</p>
+                    </div>
+                    <div class="footer__map"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="footer__soc_block">
+                        <div class="footer__soc">
+                            <div class="footer__soc_wrapper">
+                                <div class="footer__soc_icon"></div>
+                            </div>
+                        </div>
+                        <div class="footer__soc">
+                            <div class="footer__soc_wrapper">
+                                <div class="footer__soc_icon footer__soc_icon2"></div>
+                            </div>
+                        </div>
+                        <div class="footer__soc">
+                            <div class="footer__soc_wrapper">
+                                <div class="footer__soc_icon footer__soc_icon3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pay__variants">
+                        <p class="pay__variants_title">Способы оплаты</p>
+                        <div class="pay__variants_icon">
+                            <div class="pay__variants_icon_privat"></div>
+                            <div class="pay__variants_icon_visa"></div>
+                            <div class="pay__variants_icon_master"></div>
+                            <div class="pay__variants_icon_maestro"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 footer_bottom">
+                <div class="prava">
+                    <p class="final__text final__text_left">© 2016 BFM. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+                </div>
+                <div class="kam_studio"><p class="final__text final__text_right">Сделано в KAM STUDIO</p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="right__layer"></div>
+<!--Modal window-->
+<div class="modal fade" id="modal-1">
+    <div class="modal-dialog vcenter">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="decotationLeft"></div>
+                <div class="regText"><p class="regTitle">Регистрация <span>на сайте</span></p></div>
+                <div class="decotationRight decorationRegisterRight"></div>
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body modal-bodyReg">
+                <div class="modalWrapper">
+                    <div class="regForm">
+                        <div class="regBlock">
+                            <p class="regFormText">Ваше Имя</p>
+                            <div class="inputWrapCancel inputWrap1Cancel">
+                                <input type="input" class="regFormInput">
+                            </div>
+                        </div>
+                        <div class="regBlock regBlock2">
+                            <p class="regFormText">Ваша Фамилия</p>
+                            <div class="inputWrapOk">
+                                <input type="input" class="regFormInput">
+                            </div>
+                        </div>
+                        <div class="regBlock regBlock2">
+                            <p class="regFormText">Email</p>
+                            <div class="inputWrapCancel">
+                                <input type="input" class="regFormInput">
+                            </div>
+                        </div>
+                        <div class="regBlock regBlock2">
+                            <p class="regFormText">Пароль</p>
+                            <div class="inputWrapCancel">
+                                <input type="input" class="regFormInput">
+                            </div>
+                        </div>
+                        <div class="rememberPas">
+                            <a href="#" class="hadReg" data-dismiss="modal" type="button" data-toggle="modal" data-target="#modal-3">Я уже зарегистрирован</a>
+                            <a href="#" class="remPas" data-dismiss="modal" type="button" data-toggle="modal" data-target="#modal-4">Напомнить пароль</a>
+                        </div>
+                        <div class="sendButtonBlock">
+                            <p class="sendButtonSuccess">Спасибо! Вы зарегистрированы</p>
+                            <p class="sendButtonFalse">К сожалению вы не прошли валидацию!</p>
+                            <button type="button" class="btn btn-success sendButton">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="decotationBottom decorationRegister"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalFadeKorzina" id="modal-2">
+    <div class="modal-dialog modalDialogKorzina">
+        <div class="modal-content modalContentKorzina">
+            <div class="modal-header modalHeaderKorzina">
+                <div class="decotationLeft"></div>
+                <div class="yourKorzinaTitleBlock">
+                    <div class="picAndNumber">
+                        <a href="#" class="buyCountBlock">
+                            <div class="buyPicBlock"></div>
+                            <div class="buyNumberBlock">
+                                <span>2</span>
+                            </div>
+                        </a>
+                        <p class="regTitle yourKorzinaTitle">Ваша <span>корзина</span></p>
+                    </div>
+                </div>
+                <div class="decotationRight"></div>
+                <button class="close closeKorzina" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body modalBodyKorzina">
+                <div class="modalWrapperKorzina">
+                    <div class="col-sm-12 buySolutionBlock">
+                        <div class="col-sm-7 productLeft">
+                            <div class="col-xs-4 medicationPicBlock">
+                                <div class="medicationPic">
+                                    <img src="img/medical.png" alt="Продукция" />
+                                </div>
+                            </div>
+                            <div class="col-xs-8 medicationDetailsBlock">
+                                <p class="medicationName">Das Gesunde</p>
+                                <p class="medicationDetails">Детские желатиновые мишки 60 шт в упаковке</p>
+                                <p class="medicationCod">код: 22221</p>
+                                <p class="medicationPrice">200,40 <span>грн</span></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 medicationCountMainBlock">
+                            <p class="medicationCountTitle">количество</p>
+                            <div class="medicationCount">
+                                <button type="button" name="button" class="medicationLess" id="medicationLess">
+                                    <div class="medicationLessIco"></div>
+                                </button>
+                                <div class="medicationCountView">
+                                    <input type="input" name="name" value="1" class="medicationCountNum">
+                                </div>
+                                <button type="button" name="button" class="medicationMore" id="medicationMore">
+                                    <div class="medicationMoreIco"></div>
+                                </button>
+                                <a href="#" class="medicationDelete">
+                                    <div class="medicationDeleteIco"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modalWrapperKorzina">
+                    <div class="col-sm-12 buySolutionBlock">
+                        <div class="col-sm-7 productLeft">
+                            <div class="col-xs-4 medicationPicBlock">
+                                <div class="medicationPic">
+                                    <img src="img/medical.png" alt="Продукция" />
+                                </div>
+                            </div>
+                            <div class="col-xs-8 medicationDetailsBlock">
+                                <p class="medicationName">Das Gesunde</p>
+                                <p class="medicationDetails">Детские желатиновые мишки 60 шт в упаковке</p>
+                                <p class="medicationCod">код: 22221</p>
+                                <p class="medicationPrice">200,40 <span>грн</span></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 medicationCountMainBlock">
+                            <p class="medicationCountTitle">количество</p>
+                            <div class="medicationCount">
+                                <button type="button" name="button" class="medicationLess" id="medicationLess2">
+                                    <div class="medicationLessIco"></div>
+                                </button>
+                                <div class="medicationCountView">
+                                    <input type="input" name="name" value="1" class="medicationCountNum">
+                                </div>
+                                <button type="button" name="button" class="medicationMore" id="medicationMore2">
+                                    <div class="medicationMoreIco"></div>
+                                </button>
+                                <a href="#" class="medicationDelete">
+                                    <div class="medicationDeleteIco"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modalWrapperOffer">
+                    <div class="col-sm-6 medicateSumBlock">
+                        <p class="medicateSum">общая сумма: <span>400.80 грн</span></p>
+                    </div>
+                    <div class="col-sm-6 sendOfferBlockBtn">
+                        <button type="button" class="btn btn-success sendButton sendOffer">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer modalFooterKorzina">
+                <div class="decotationBottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalFadeKorzina" id="korzinaEmpty">
+    <div class="modal-dialog modalDialogKorzina">
+        <div class="modal-content modalContentKorzina">
+            <div class="modal-header modalHeaderKorzina">
+                <div class="decotationLeft"></div>
+                <div class="yourKorzinaTitleBlock">
+                    <div class="picAndNumber">
+                        <a href="#" class="buyCountBlock">
+                            <div class="buyPicBlock"></div>
+                            <div class="buyNumberBlock">
+                                <span>0</span>
+                            </div>
+                        </a>
+                        <p class="regTitle yourKorzinaTitle">Ваша <span>корзина</span></p>
+                    </div>
+                </div>
+                <div class="decotationRight"></div>
+                <button class="close closeKorzina" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body modalBodyKorzina">
+                <div class="modalWrapperOffer korzinaEmptyBlock">
+                    <p class="emptyParag1">К сожалению в вашей корзине пока  ничего нет.</p>
+                    <p class="emptyParag2">Обязательно возвращайтесь сюда,
+                        когда что-нибудь выберете из нашего каталога!</p>
+                </div>
+            </div>
+            <div class="modal-footer modalFooterKorzina">
+                <div class="decotationBottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-3">
+    <div class="modal-dialog vcenter">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="decotationLeft"></div>
+                <div class="regText EnterFormText"><p class="regTitle">Авторизация <span>на сайте</span></p></div>
+                <div class="decotationRight enterDecoration"></div>
+                <button class="close closeEnter" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modalWrapper">
+                    <div class="regForm">
+                        <div class="regBlock regBlock2">
+                            <p class="regFormText">Email</p>
+                            <div class="inputWrapCancel">
+                                <input type="input" class="regFormInput regFormEnterInput">
+                            </div>
+                        </div>
+                        <div class="regBlock regBlock2 EnterFormText">
+                            <p class="regFormText">Пароль</p>
+                            <div class="inputWrapCancel">
+                                <input type="input" class="regFormInput">
+                            </div>
+                        </div>
+                        <div class="rememberPas">
+                            <a href="#" class="hadReg" data-dismiss="modal" type="button" data-toggle="modal" data-target="#modal-1">Зарегистрироваться</a>
+                            <a href="#" class="remPas" data-dismiss="modal" type="button" data-toggle="modal" data-target="#modal-4">Напомнить пароль</a>
+                        </div>
+                        <div class="sendButtonBlock">
+                            <p class="sendButtonSuccess">Приятного использование</p>
+                            <p class="sendButtonFalse">Пароль не подходит</p>
+                            <button type="button" class="btn btn-success sendButton">Вход</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="decotationBottom enterDecorationBottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-4">
+    <div class="modal-dialog vcenter">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="decotationLeft"></div>
+                <div class="regText EnterFormText forgetFormText"><p class="regTitle">Напомнить <span>пароль</span></p></div>
+                <div class="decotationRight"></div>
+                <button class="close closeForget" data-dismiss="modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modalWrapper">
+                    <div class="regForm">
+                        <div class="regBlock regBlock2">
+                            <p class="regFormText">Email</p>
+                            <div class="inputWrapCancel">
+                                <input type="input" class="regFormInput regFormEnterInput regFormForgetInput">
+                            </div>
+                        </div>
+                        <div class="rememberPas">
+                            <a href="#" class="hadReg" data-dismiss="modal" type="button" data-toggle="modal" data-target="#modal-3">Я уже зарегистрирован</a>
+                            <a href="#" class="remPas" data-dismiss="modal" type="button" data-toggle="modal" data-target="#modal-1">Зарегистрироваться</a>
+                        </div>
+                        <div class="sendButtonBlock">
+                            <p class="sendButtonSuccess">Ваш новый пароль</p>
+                            <p class="sendButtonFalse">Такого аккаунта не существует</p>
+                            <button type="button" class="btn btn-success sendButton">Вход</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="decotationBottom enterDecorationBottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden"></div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="<?= RS ?>js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/animate/animate-css.js"></script>
+<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<script src="libs/ion.rangeSlider-2.1.4/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/jquery.measurer.js"></script>
+<script src="js/jquery.gradienttext.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="libs/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #00b0ad url(http://hello-site.ru//main/images/preloads/grid.svg) center center no-repeat;background-size:41px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},600);};</script>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+</body>
+</html>
