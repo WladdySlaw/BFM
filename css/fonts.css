@@ -1,0 +1,120 @@
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../fonts/Arial/ArialRegular/ArialRegular.eot");
+    src: url("../fonts/Arial/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Arial/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../fonts/Arial/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Sceptica";
+    src: url("../fonts/Sceptica/Sceptica.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaItalic";
+    src: url("../fonts/Sceptica/Sceptica-Italic.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaBold";
+    src: url("../fonts/Sceptica/Sceptica-Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaMedium";
+    src: url("../fonts/Sceptica/Sceptica-Medium.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaBlack";
+    src: url("../fonts/Sceptica/ScepticaBlack.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaLite";
+    src: url("../fonts/Sceptica/Sceptica-Light.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaThin";
+    src: url("../fonts/Sceptica/Sceptica-Thin.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaItalic";
+    src: url("../fonts/Sceptica/Sceptica-Italic.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScepticaBoldItalic";
+    src: url("../fonts/Sceptica/Sceptica-BoldItalic.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GothamBlack";
+    src: url("../fonts/Gotham/gotham_pro_black.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GothamRegular";
+    src: url("../fonts/Gotham/GothamProRegular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GothamMedium";
+    src: url("../fonts/Gotham/GothamProMedium.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GothamLight";
+    src: url("../fonts/Gotham/GothamProLight.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GothamBlackItalic";
+    src: url("../fonts/Gotham/GothamProBlackItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GothamBold";
+    src: url("../fonts/Gotham/GothamBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "CenturyGothicRegular";
+    src: url("../fonts/CenturyGothic/CenturyGothic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "CenturyGothicBold";
+    src: url("../fonts/CenturyGothicBold/Century-Gothic-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}

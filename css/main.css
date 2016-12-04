@@ -1,0 +1,4621 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+a:focus{
+	outline: none !important;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+body{
+	overflow-x: hidden;
+}
+body{
+	outline: none;
+}
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+}
+a:hover, a:focus{
+	text-decoration: inherit;
+}
+.hidden {
+	display: none;
+}
+/*-----------------------HEADER-------------------------*/
+.header .header__block{
+  width: 100%;
+  color: #ffffff;
+  height: 165px;
+	padding-left: 0;
+	padding-right: 0;
+	background: url(../img/header__left.jpg) left center no-repeat, url(../img/header__right.jpg) right center no-repeat;
+}
+.header .header__left_bg{
+  height: 165px;
+  float: left;
+  background-repeat: no-repeat;
+}
+.header .header__right_bg{
+  height: 165px;
+  width: 22%;
+  float: right;
+  background-repeat: no-repeat;
+}
+.header .header__enter_title{
+	letter-spacing: .7px;
+	transition: .25s;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	font-family: "Sceptika";
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #58595b;
+  background-image: url(../img/enter_img.png);
+  background-repeat: no-repeat;
+  padding-left: 18px;
+  background-position: 0px 11px;
+  padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 50;
+}
+.header .header__enter_title:hover, .header .header__enter_title:active, .header .header__enter_title:focus{
+	color: #00b0ad;
+	text-decoration: none;
+	background-image: url(../img/enter_imgHover.png);
+}
+.header .header__reg_title{
+	transition: .25s;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	font-family: "Sceptika";
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #58595b;
+	padding-left: 15px;
+	border-left: 1px solid black;
+	position: relative;
+	z-index: 50;
+	letter-spacing: .7px;
+}
+.header .header__reg_title:hover, .header .header__reg_title:active, .header .header__reg_title:focus{
+	color: #00b0ad;
+	text-decoration: none;
+}
+.header .header__enter{
+	margin-top: 70px;
+}
+.header .header__logo{
+	margin-top: 45px;
+	cursor: pointer;
+}
+.header .header__phone{
+	letter-spacing: .7px;
+	font-size: 18px;
+	color: #58595b;
+	font-family: "ArialRegular";
+	background-image: url(../img/phone_icon.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	background-position: 3px 2px;
+}
+.header .header__contacts{
+	margin-top: 43px;
+}
+.header .header__center_content{
+	width: 60%;
+}
+.header .icon__buy_block{
+	width: 25px;
+	height: 25px;
+	background-color: #00b0ad;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	-ms-border-radius: 25px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	top: -15px;
+	left: 0px;
+}
+.header .icon__buy_block span{
+	font-size: 14px;
+	font-family: "Sceptika";
+	color: #ffffff;
+	bottom: -2px;
+	right: 0;
+	position: relative;
+	padding-left: 0;
+}
+.icon__buy:hover, .icon__buy:active, .icon__buy:focus{
+	text-decoration: none;
+}
+.icon__buy_img_blockBuy{
+	width: 20px;
+	height: 25px;
+	z-index: 50;
+	left: 3px;
+	display: inline-block;
+	position: relative;
+	background-image: url(../img/icon_buy.png);
+	background-repeat: no-repeat;
+}
+.icon__buy_img_blockBuy:hover, .icon__buy_img_blockBuy:active .icon__buy_img_blockBuy:focus{
+	background-position: 0px -53px;
+	z-index: 50;
+}
+.icon__buy_img_blockLike{
+	width: 20px;
+	height: 25px;
+	z-index: 50;
+	left: 3px;
+	display: inline-block;
+	position: relative;
+	background-image: url(../img/likeIcon.png);
+	background-repeat: no-repeat;
+}
+.icon__buy_img_blockLike:hover, .icon__buy_img_blockLike:active .icon__buy_img_blockLike:focus{
+	background-position: 0px -57px;
+	z-index: 50;
+}
+.icons__buy_like_block{
+	margin-left: 50px;
+}
+.header__logo.col-xs-6{
+	width: 45%;
+	text-align: center;
+}
+.header__contacts.col-xs-2{
+	width: 21%;
+}
+.header__nav .navbar-default{
+	background-color: #00b0ad;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+}
+.header__nav.col-xs-12{
+	padding-left: 0;
+	padding-right: 0;
+}
+.header__nav .navbar-default .navbar-nav li a{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: "ScepticaMedium";
+	letter-spacing: 1.4px;
+}
+.header .navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.header .navbar .navbar-collapse {
+  text-align: center;
+}
+.header .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background-color: transparent;
+	color: #fff;
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 58px 0px;
+	position: relative;
+	top: -2px;
+}
+.header .nav__1 a{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 45px -50px;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	position: relative;
+	top: -2px;
+}
+.header .nav__0 a{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 45px -50px;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	position: relative;
+	top: -2px;
+}
+.header .nav__3_5 a{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 45px -50px;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	position: relative;
+	top: -2px;
+}
+.header .nav__3_5 a:hover, .header .nav__3_5 a:focus{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 58px 0px;
+	position: relative;
+	top: -2px;
+}
+.header .nav__0 a:hover, .header .nav__0 a:focus{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 58px 0px;
+	position: relative;
+	top: -2px;
+}
+.header .nav__1 a:hover, .header .nav__2 a:focus{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 45px 0px;
+	position: relative;
+	top: -2px;
+}
+.header .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .header .nav__1 a:focus{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 45px 0px;
+	position: relative;
+	top: -2px;
+}
+.header .nav__2 a{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: -25px -50px;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	position: relative;
+	top: -2px;
+}
+.header .nav__2 a:hover, .header .nav__2 a:focus{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 22px 0px;
+	position: relative;
+	top: -2px;
+}
+.header .nav__3 a{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: -25px -50px;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	position: relative;
+	top: -2px;
+}
+.header .nav__3 a:hover, .header .nav__3 a:focus{
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: 44px 0px;
+	position: relative;
+	top: -2px;
+}
+.search{
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+}
+.search:hover{
+	background-image: url(../img/search__hover.png);
+}
+.header .search__a{
+	padding-left: 10px;
+	background-color: transparent;
+	border: none;
+	padding-top: 11px;
+
+	position: relative;
+}
+.search_2{
+	display: none;
+}
+.header .navbar{
+	margin-bottom: 0;
+}
+/*-----------------------Больше чем аптека Блок-------------------------*/
+.bigger_apteka .text_block_border{
+	background-image: url(../img/border__square.png);
+	height: 280px;
+	width: 330px;
+	background-repeat: no-repeat;
+}
+.bigger_apteka .apteka__info_block{
+	background-color: #e9e9e9;
+	height: 500px;
+	margin-top: -4px;
+	background: url(../img/background.png) right center no-repeat, #e9e9e9;
+	padding-top: 0;
+	position: relative;
+}
+.bigger_apteka .center_block{
+	background-image: url(../img/border__square.png);
+	background-repeat: no-repeat;
+	width: 330px;
+	height: 290px;
+	margin-top: 100px;
+	position: relative;
+	left: 33%;
+}
+.bigger_apteka .center_block__top_text{
+	font-size: 28px;
+	color: #00b0ad;
+	font-family: "GothamBlack";
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 33px;
+	padding-top: 50px;
+	margin-left: 35px;
+  margin-right: 35px;
+	margin-bottom: 23px;
+}
+.bigger_apteka .center_block__line{
+	background-image: url(../img/line.png);
+	background-repeat: no-repeat;
+	background-position: 0px;
+	width: 85px;
+	height: 10px;
+	margin-left: 117px;
+  margin-right: 117px;
+}
+.bigger_apteka .center_block__top_text2{
+	padding-top: 25px;
+}
+.left_pic_block img{
+	width: 100%;
+}
+.right_pic_block img{
+	width: 100%;
+}
+.header .navbar-default .navbar-toggle{
+	border-color: transparent;
+}
+.header .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle.navbar-toggle:focus {
+    background-color: transparent;
+}
+/*-----------------------О нас-------------------------*/
+.about_us .about_us_title{
+	background: url(../img/big_line.png) left center no-repeat, url(../img/big_line.png) right center no-repeat;
+	background-size: inherit;
+	text-align: center;
+}
+.about_us .about_us_title{
+	font-family: "ScepticaBlack";
+	font-size: 20px;
+	color: #00b0ad;
+}
+.about_us .about_us_title_block{
+	margin-top: 90px;
+	margin-bottom: 70px;
+}
+.about_us .about_us__parag{
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #58595b;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	letter-spacing: 1.5px;
+}
+.osmotr_come{
+	background: url(../img/manPhrase.png) center center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 430px;
+	margin-top: 40px;
+}
+.osmotr_come_block{
+	position: relative;
+	bottom: 70px;
+}
+.about_us .icons__info_number{
+	font-family: "GothamBlack";
+	font-size: 48px;
+	color: #00b0ad;
+	margin-top: 10px;
+	text-align: center;
+}
+.about_us .icons__info_text{
+	font-family: "ScepticaMedium";
+	font-size: 14px;
+	color: #00b0ad;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.about_us .icons__info_icon{
+	background: url(../img/icon_1.png) center center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 110px;
+}
+.about_us .icons__info_icon2{
+	background: url(../img/icon_2.png) center center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 110px;
+}
+.about_us .icons__info_icon3{
+	background: url(../img/icon_3.png) center center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 110px;
+}
+.about_us .icons__info_icon4{
+	background: url(../img/icon_4.png) center center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 110px;
+}
+.about_us .icons__info_line{
+	background: url(../img/line_under_icon.png) right center no-repeat;
+	background-size: contain;
+	height: 3px;
+	margin-top: 25px;
+}
+.about_us .icons_info{
+	margin-bottom: 50px;
+}
+/*-----------------------SLIDER-------------------------*/
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.slider .owl-pagination{
+	position: relative;
+	bottom: 65px;
+}
+.slider .owl-theme .owl-controls .owl-page span {
+    background: #ecf0f1;
+}
+.slider .carousel__main_text{
+	font-family: "ScepticaBoldItalic";
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.slider .carousel__text{
+	position: relative;
+	top: 50px;
+}
+.slider .item{
+	position: relative;
+}
+.slider .carousel__text {
+    position: absolute;
+    width: 34%;
+    top: 90px;
+    left: 815px;
+}
+.slider .quote_1{
+	background: url("../img/quote_1.png") center center no-repeat;
+	width: 55px;
+	height: 50px;
+	margin-left: 43%;
+	margin-bottom: 15px;
+}
+.slider .quote_2{
+	background: url("../img/quote_2.png") center center no-repeat;
+	width: 55px;
+	height: 50px;
+	margin-left: 43%;
+	margin-top: 15px;
+}
+/*-----------------------Почему мы-------------------------*/
+.why__we .why__we_pic{
+	background: url("../img/why__we_pic1.png") center center no-repeat;
+	width: 200px;
+	height: 200px;
+}
+.why__we .why__we_pic2{
+	background: url("../img/why__we_pic2.png") center center no-repeat;
+}
+.why__we .why__we_pic3{
+	background: url("../img/why__we_pic3.png") center center no-repeat;
+}
+.why__we .why__we_pic4{
+	background: url("../img/why__we_pic4.png") center center no-repeat;
+}
+.why__we .why__we_pic5{
+	background: url("../img/why__we_pic5.png") center center no-repeat;
+}
+.why__we .why__we_num{
+	text-align: center;
+	padding-top: 30px;
+	font-family: "GothamBlack";
+	font-size: 90px;
+	color: #00b0ad;
+}
+.why__we .why__we_title{
+	font-family: "GothamBlack";
+	font-size: 24px;
+	color: #00b0ad;
+	text-transform: uppercase;
+	padding-left: 25px;
+  padding-top: 40px;
+	letter-spacing: 1px;
+}
+.why__we .why__we_text{
+	font-family: "Sceptica";
+	font-size: 16px;
+	color: #939598;
+	text-transform: uppercase;
+	padding-left: 25px;
+	letter-spacing: 1.5px;
+}
+.why__we .why__we_line{
+	background: url("../img/line_under_text.png") left center no-repeat;
+	width: 120px;
+	height: 5px;
+	margin-bottom: 15px;
+	position: relative;
+	right: 40px;
+}
+.why__we .why__we_wrap{
+	margin-bottom: 40px;
+}
+/*-----------------------FOOTER-------------------------*/
+.footer .footer__logo{
+	background: url("../img/footer__logo.png") left center no-repeat;
+	width: 170px;
+	height: 70px;
+	padding-right: 30px;
+	border-right: 1px solid #ffffff;
+	display: inline-block;
+	cursor: pointer;
+}
+.footer{
+	background-color: #272359;
+	position: relative;
+	z-index: 50;
+}
+.footer .footer_top{
+	margin-top: 35px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #9391ac;
+}
+.footer .footer__contacts_phone{
+	font-family: "Sceptica";
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 33px;
+  margin-bottom: 0px;
+}
+.footer .footer__contacts_phone span{
+	font-family: "ScepticaThin";
+}
+.footer .footer__contacts_adress{
+	font-family: "ScepticaThin";
+	font-size: 12px;
+	color: #ffffff;
+	letter-spacing: 2.5px;
+}
+.footer .footer__contacts{
+	display: inline-block;
+	padding-left: 25px;
+	position: relative;
+	bottom: 20px;
+	padding-right: 30px;
+}
+.footer .footer__map{
+	background: url("../img/footer__map.png") left center no-repeat;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	position: relative;
+	bottom: 18px;
+	cursor: pointer;
+}
+.footer .footer__soc_icon{
+	background: url("../img/facebook.png") center center no-repeat;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 11px;
+	left: 12px;
+	cursor: pointer;
+}
+.footer .footer__soc_icon2{
+	background: url("../img/vk.png") center center no-repeat;
+}
+.footer .footer__soc_icon3{
+	background: url("../img/skype.png") center center no-repeat;
+}
+.footer .footer__soc_wrapper{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #a19fb7;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+}
+.footer .footer__soc_wrapper:hover{
+	background-color: #a19fb7;
+}
+.footer .footer__soc{
+	display: inline-block;
+	padding-right: 20px;
+}
+.footer .pay__variants_icon_privat{
+	background: url("../img/privat_icon.png") center center no-repeat;
+	width: 90px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.footer .pay__variants_icon_visa{
+	background: url("../img/visa_icon.png") center center no-repeat;
+	width: 50px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.footer .pay__variants_icon_master{
+	background: url("../img/mastercard.png") center center no-repeat;
+	width: 50px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.footer .pay__variants_icon_maestro{
+	background: url("../img/maestro_icon.png") center center no-repeat;
+	width: 50px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.footer .pay__variants_icon{
+	display: inline-block;
+}
+.footer .pay__variants{
+	display: inline-block;
+	margin-left: 40px;
+}
+.footer .pay__variants_title{
+	font-family: "ScepticaThin";
+	font-size: 11px;
+	color: #ffffff;
+	letter-spacing: 1.7px;
+}
+.footer .final__text{
+	font-family: "ScepticaMedium";
+	font-size: 10px;
+	color: #ffffff;
+	text-align: right;
+	margin-top: 8px;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
+.footer .final__text{
+	text-align: right;
+}
+.footer .final__text_right{
+	text-align: left;
+}
+.footer .prava{
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	float: left;
+	padding-right: 30px;
+}
+.footer .kam_studio{
+	display: inline-block;
+	text-align: left;
+	width: 48%;
+	float: left;
+	padding-left: 30px;
+}
+.footer .footer__soc_block{
+	display: inline-block;
+}
+/*-----------------------Треугольники в правой части карусели-------------------------*/
+.right__layer {
+    background: url("../img/squares.png") center right;
+    width: 24%;
+    height: 1060px;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    position: absolute;
+    top: 1230px;
+		left: 1450px;
+		display: block;
+}
+/*-----------------------Поиск-------------------------*/
+.search__a span {
+    color: #ffffff;
+    transition: .5s;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-o-transition: .5s;
+		-ms-transition: .5s;
+    float: right;
+    position: relative;
+}
+.search__a span:hover{
+	color: #f0f0f1;
+	outline: none;
+}
+.search__a span:focus{
+	outline: none;
+}
+.search__a:focus{
+	outline: none;
+}
+.searchInput {
+  float: left;
+  border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+  border: 0;
+	position: relative;
+	top: 10px;
+	display: none;
+	height: 25px;
+	left: 30px;
+}
+.searchInput:focus{
+	outline: none;
+}
+.header .search__a{
+	float: right;
+	left: 240px;
+	padding-top: 14px;
+}
+.searchInput::-webkit-input-placeholder {
+	color: #00b0ad;
+	font-family: "ScepticaMedium";padding-left: 25px; position: relative; bottom: 1px;
+}
+.searchInput::-moz-placeholder          {color: #00b0ad;font-family: "ScepticaMedium";padding-left: 25px; position: relative; bottom: 1px;}/* Firefox 19+ */
+.searchInput:-moz-placeholder           {color: #00b0ad;font-family: "ScepticaMedium";padding-left: 25px; position: relative; bottom: 1px;}/* Firefox 18- */
+.searchInput:-ms-input-placeholder      {color: #00b0ad;font-family: "ScepticaMedium";padding-left: 25px; position: relative; bottom: 1px;}
+.searchForm{
+	position: relative;
+}
+.header .nav__4{
+	position: absolute;
+	left: 65%;
+}
+.searchFormMin{
+	display: none;
+}
+.sliderImg {
+  background: url("../img/carousel1.png") center center;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+/*Modal window*/
+.close{
+	float: left;
+}
+.modal-header.modal-header{
+	border-bottom: none;
+}
+.modal-header .close {
+		transition: .5s;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-o-transition: .5s;
+		-ms-transition: .5s;
+    position: relative;
+    margin-top: -2px;
+    background-color: #00b0ad;
+    border-color: transparent;
+    z-index: 20;
+    opacity: 100;
+    border-radius: 49px;
+		-webkit-border-radius: 49px;
+    -moz-border-radius: 49px;
+		-o-border-radius: 49px;
+		-ms-border-radius: 49px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 25px;
+    padding-bottom: 0px;
+    padding-right: -1px;
+    position: relative;
+    left: 1px;
+    float: right;
+    top: -69px;
+    left: 186px;
+}
+.modal-header .close.close:hover, .modal-header .focus, .modal-header .active{
+	background-color: #009996;
+	color: white;
+	opacity: 1;
+}
+.modal-footer{
+	border-top: none;
+}
+button.close{
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+	-ms-transition: .1s;
+	-o-transition: .1s;
+	transition: prop time;
+	border: 2px solid black;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+	padding: 1.25px 6px;
+	opacity: 0.3;
+}
+.modal-warning{
+	display: block;
+	text-align: center;
+}
+.modal-main_text{
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	margin-top: 50px;
+	margin-left: 70px;
+	margin-right: 70px;
+	color: #696969;
+	font-size: 25px;
+}
+.btn-default{
+	background-image: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	color: #acacac;
+}
+.btn-danger{
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	background-image: none;
+	background-color: #ea422b;
+}
+.modal .btn{
+	padding: 5px 70px;
+	font-size: 18px;
+}
+.modal-buttons{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.modal-footer .btn + .btn{
+	margin-left: 14px;
+}
+.main_button{
+	margin-top: 30px;
+	text-align: center;
+}
+.btn-info{
+	font-family: "Open Sans", sans-serif;
+}
+.modal-content.modal-content {
+    border: none;
+    border-radius: 3px;
+		-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+		-o-border-radius: 3px;
+		-ms-border-radius: 3px;
+}
+.decotationLeft {
+    background: url("../img/decorationLeft.png") left center no-repeat;
+    width: 105px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    right: 6px;
+    bottom: 11px;
+}
+.decotationRight {
+    background: url("../img/decorationRight.png") right center no-repeat;
+    width: 165px;
+    height: 165px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    bottom: 12px;
+    left: 15px;
+}
+.regText {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    left: 18px;
+}
+.regTitle{
+	font-family: "GothamBlack";
+	font-size: 22px;
+	color: #00b0ad;
+	text-transform: uppercase;
+}
+.regTitle span{
+	font-family: "GothamRegular";
+}
+.modalWrapper{
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.modal-body.modal-body {
+    position: relative;
+    padding: 15px;
+    padding-top: 50px;
+}
+.regFormText {
+    font-family: "ScepticaLite";
+    font-size: 14px;
+    color: #63656a;
+    margin-bottom: 5px;
+}
+.regFormInput {
+    padding-left: 15px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    bottom: 31px;
+		font-family: "ScepticaLite";
+		font-size: 16px;
+		color: #63656a;
+		border: 1px solid #d0d0d2;
+}
+.regForm input:focus, .regForm textarea:focus,.regForm keygen:focus,.regForm select:focus {
+    outline-offset: none;
+		outline: -webkit-focus-ring-color auto 0px;
+}
+.regFormInput:focus, .regFormInput:active{
+	border-width: 1px;
+  border-style: ridge;
+  border-color: #d0d0d2;
+	border-left: 2px solid #00b0ad;
+}
+.regBlock2 .regFormInput{
+	bottom: 0;
+}
+.regBlock2{
+	margin-top: 30px;
+}
+.regBlock{
+	margin-bottom: 0;
+  padding-bottom: 0;
+  height: 70px;
+}
+.rememberPas{
+	text-align: center;
+	padding-top: 30px;
+}
+.hadReg{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+	padding-right: 15px;
+	border-right: 1px solid #63656a;
+}
+.remPas{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	padding-left: 15px;
+	color: #63656a;
+}
+.hadReg:hover, .hadReg:active, .hadReg:focus{
+	color: #63656a;
+	text-decoration: none;
+}
+.remPas:hover, .remPas:active, .remPas:focus{
+	color: #009996;
+	text-decoration: none;
+}
+.sendButtonBlock{
+	text-align: center;
+	padding-top: 50px;
+}
+.sendButton.btn-success{
+	background-color: #00b0ad;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	height: 50px;
+	width: 70%;
+	outline: 0;
+	border: 0;
+	line-height: 40px;
+}
+.sendButton.btn-success:hover, .sendButton.btn-success:active, .sendButton.btn-success:focus{
+	background-color: #009996;
+	outline: 0;
+	border: 0;
+}
+.decotationBottom {
+    background: url(../img/decorationBottom.png) left center no-repeat;
+    float: left;
+    width: 165px;
+    height: 165px;
+    position: relative;
+    right: 11px;
+    bottom: 150px;
+		z-index: 1;
+}
+.header .navMainPage .navbar-default .navbar-nav > .active > a{
+	background-position: center top;
+	background-color: #02908e;
+	top: 0;
+}
+.decorationRegister{
+	bottom: 120px;
+}
+.modal-footer.modal-footer {
+    border-bottom: 10px solid #00b0ad;
+    height: 74px;
+    border-top: none;
+}
+.modal.modal{
+	overflow: auto;
+}
+/*Form Cancel and Form success class*/
+.regFormInputCancel{
+	padding-left: 15px;
+	width: 100%;
+	height: 50px;
+	position: relative;
+	bottom: 31px;
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	border-width: 1px;
+  border-style: ridge;
+  border-color: #d0d0d2;
+	border-left: 2px solid #ed5565;
+}
+.regFormInputOk{
+	padding-left: 15px;
+	width: 100%;
+	height: 50px;
+	position: relative;
+	bottom: 31px;
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	border-width: 1px;
+  border-style: ridge;
+  border-color: #d0d0d2;
+	border-left: 2px solid #8cc152;
+}
+/*Input Cancel Чтобы добавить иконку, убираем предыдущие классы и добавляем wrapper эти*/
+.inputWrapCancel::before {
+		display: block;
+    position: absolute;
+    content: "hi";
+    background: url(../img/cancelIcon.png) center center no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 51px;
+    color: transparent;
+    margin-top: 13px;
+}
+.regBlock .inputWrap1Cancel::before{
+	margin-top: 10px;
+}
+.inputWrapCancel::before {
+    position: absolute;
+    content: "hi";
+    background: url(../img/cancelIcon.png) center center no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 51px;
+    color: transparent;
+    margin-top: 13px;
+}
+/*Input OK Чтобы добавить иконку, убираем предыдущие классы и добавляем wrapper эти*/
+.inputWrapOk::before {
+		display: block;
+    position: absolute;
+    content: "hi";
+    background: url(../img/okIcon.png) center center no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 51px;
+    color: transparent;
+    margin-top: 13px;
+}
+.regBlock .inputWrap1Ok::before{
+	margin-top: 10px;
+}
+.inputWrapOk::before {
+    position: absolute;
+    content: "hi";
+    background: url(../img/okIcon.png) center center no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 51px;
+    color: transparent;
+    margin-top: 13px;
+}
+/*Правки 1*/
+.osmotrText {
+    font-family: "GothamBlackItalic";
+    color: #ffffff;
+    font-size: 26px;
+    padding-top: 101px;
+    line-height: 27px;
+    text-align: center;
+}
+.osmotrTextBlock{
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    left: 22%;
+}
+.reviewerName{
+	color: #ffffff;
+	font-size: 19px;
+	font-family: "ScepticaBoldItalic";
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
+.reviewerPost{
+	font-family: "ScepticaItalic";
+	color: #ffffff;
+	font-size: 14px;
+	border-bottom: 2px solid #4dc8c6;
+	width: 55%;
+	letter-spacing: 1px;
+}
+.carouselPic {
+    background: url("../img/vrach1.png") center center no-repeat;
+    background-position: 35px 10px;
+    width: 350px;
+    display: inline;
+    height: 350px;
+    position: absolute;
+    background-color: #86dad8;
+    border-radius: 190px;
+		-webkit-border-radius: 190px;
+    -moz-border-radius: 190px;
+		-o-border-radius: 190px;
+		-ms-border-radius: 190px;
+    top: 56px;
+    left: 18%;
+}
+.reviewerInfo{
+	position: absolute;
+  bottom: 200px;
+}
+.carouselPic2{
+	background: url("../img/vrach2.png") center center no-repeat;
+	background-position: 20px 10px;
+	width: 350px;
+	display: inline;
+	height: 350px;
+	position: absolute;
+	background-color: #86dad8;
+	border-radius: 190px;
+	-webkit-border-radius: 190px;
+	-moz-border-radius: 190px;
+	-o-border-radius: 190px;
+	-ms-border-radius: 190px;
+	top: 56px;
+	left: 18%;
+}
+.carouselPic3{
+	background: url("../img/vrach3.png") center center no-repeat;
+	background-position: 20px 10px;
+	width: 350px;
+	display: inline;
+	height: 350px;
+	position: absolute;
+	background-color: #86dad8;
+	border-radius: 190px;
+	-webkit-border-radius: 190px;
+	-moz-border-radius: 190px;
+	-o-border-radius: 190px;
+	-ms-border-radius: 190px;
+	top: 56px;
+	left: 18%;
+}
+/****************************MODAL_KORZINA**************************/
+.modalDialogKorzina.modal-dialog{
+	width: 960px;
+}
+.buyCountBlock .buyPicBlock{
+	background: url("../img/korzina.png") center center no-repeat;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+}
+.buyCountBlock .buyNumberBlock {
+	width: 40px;
+	height: 40px;
+	background-color: #00b0ad;
+	border-radius: 30px;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	-ms-border-radius: 30px;
+	display: inline-block;
+	position: relative;
+	bottom: 35px;
+	right: 10px;
+	z-index: 5;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.buyCountBlock .buyNumberBlock span{
+	font-family: "Sceptica";
+	font-size: 22px;
+	color: #ffffff;
+	vertical-align: middle;
+	padding-left: 0;
+	position: relative;
+	top: 5px;
+	left: -1px;
+}
+.yourKorzinaTitleBlock .yourKorzinaTitle{
+	display: inline-block;
+	padding-left: 70px;
+}
+.modalHeaderKorzina .decotationRight {
+  background: url("../img/decorationRight.png") right center no-repeat;
+  width: 165px;
+  height: 165px;
+  display: inline-block;
+  float: right;
+  position: relative;
+  bottom: 145px;
+  left: 15px;
+}
+.yourKorzinaTitleBlock{
+	margin-top: 70px;
+	text-align: left;
+}
+.buyCountBlock:hover, .buyCountBlock:focus, .buyCountBlock:active{
+	text-decoration: none;
+	color: currentColor;
+}
+.buyCountBlock{
+	position: relative;
+	top: 12px;
+}
+.yourKorzinaTitleBlock .picAndNumber{
+	margin-left: 25%;
+  margin-right: 25%;
+}
+.modalBodyKorzina .modalWrapperKorzina{
+	padding-left: 35px;
+	padding-right: 35px;
+	width: 100%;
+	height: 260px;
+}
+.modalWrapperKorzina .medicationPic{
+	width: 90px;
+	height: 185px;
+}
+.medicationName{
+	font-family: "ScepticaBold";
+	font-size: 16px;
+	color: #58595b;
+	text-transform: uppercase;
+	letter-spacing: 0.9px;
+}
+.medicationDetails{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #58595b;
+	letter-spacing: 0.9px;
+}
+.medicationCod {
+  font-family: "CenturyGothicRegular";
+  font-size: 13px;
+  color: #00b0ad;
+  border-bottom: 2px solid #00b0ad;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  display: block;
+  width: 53%;
+  position: relative;
+  padding-left: 10px;
+  right: 11px;
+	}
+.medicationPrice{
+	color: #343537;
+	font-size: 20px;
+	font-family: "Sceptica";
+	margin-bottom: 0;
+}
+.medicationPrice span{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.medicationLess{
+	display: inline-block;
+	-webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+	-ms-transition: 0.25s;
+  transition: 0.25s;
+	width: 42px;
+	height: 42px;
+	background-color: transparent;
+	border: 2px solid #58595b;
+}
+.medicationLess:focus{
+	outline: none;
+}
+.medicationLessIco{
+	background: url("../img/minusSpan.png") center center no-repeat;
+	width: 25px;
+	height: 2px;
+}
+.medicationLess:hover, .medicationLess:focus, .medicationLess:active{
+	border-color: #00b0ad;
+}
+.medicationLess:hover .medicationLessIco, .medicationLess:focus .medicationLessIco, .medicationLess:active .medicationLessIco{
+	background: url("../img/minusSpanHover.png") center center no-repeat;
+}
+.medicationCountTitle {
+  font-family: "CenturyGothicRegular";
+  font-size: 13px;
+  color: #58595b;
+  padding-left: 60px;
+}
+.medicationCountView {
+	margin-left: 15px;
+	margin-right: 15px;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+	-ms-transition: 0.25s;
+  transition: 0.25s;
+  width: 110px;
+  height: 42px;
+  border: 2px solid #58595b;
+  text-align: center;
+  bottom: 17px;
+}
+.medicationCountNum {
+  font-family: "Sceptica";
+  color: #58595b;
+  font-size: 16px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  padding-top: 7px;
+  width: 50px;
+  text-align: center;
+  border: 0;
+}
+.medicationCountNum:focus{
+	outline: none;
+}
+.medicationCountView:hover{
+	border-color: #00b0ad;
+}
+.medicationMore{
+	display: inline-block;
+	-webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+	-ms-transition: 0.25s;
+  transition: 0.25s;
+	width: 42px;
+	height: 42px;
+	background-color: transparent;
+	border: 2px solid #58595b;
+}
+.medicationMore:focus{
+	outline: none;
+}
+.medicationMoreIco{
+	background: url("../img/plusNum.png") center center no-repeat;
+	width: 25px;
+	height: 25px;
+}
+.medicationMore:hover, .medicationMore:active, .medicationMore:focus{
+	border-color: #00b0ad;
+}
+.medicationMore:hover .medicationMoreIco, .medicationMore:active .medicationMoreIco, .medicationMore:focus .medicationMoreIco{
+	background: url("../img/plusNumHover.png") center center no-repeat;
+}
+.medicationDeleteIco{
+	display: inline-block;
+	background: url("../img/trash.png") center center no-repeat;
+	height: 35px;
+	width: 30px;
+}
+.medicationDeleteIco:hover{
+	background: url("../img/trashHover.png") center center no-repeat;
+}
+.medicationDelete{
+	padding-left: 40px;
+	position: relative;
+	bottom: 4px;
+}
+.medicationCountMainBlock{
+	padding-top: 20px;
+}
+.buySolutionBlock {
+  position: relative;
+  bottom: 73px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	border-top: 1px solid #58595b;
+}
+.modalWrapperOffer .sendOffer{
+	width: 310px;
+	height: 50px;
+	float: right;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.modalWrapperOffer .medicateSum{
+	font-family: "Sceptica";
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #58595b;
+	float: left;
+	position: relative;
+	z-index: 5;
+}
+.modalWrapperOffer .medicateSum span{
+	padding-left: 10px;
+	font-size: 24px;
+	color: #58595b;
+}
+.modalWrapperOffer{
+	padding-left: 35px;
+  padding-right: 35px;
+}
+.modalContentKorzina{
+	height: auto;
+}
+.modalBodyKorzina{
+	height: auto;
+}
+.modalDialogKorzina .closeKorzina{
+	top: -150px;
+	position: relative;
+}
+.modalFooterKorzina.modal-footer{
+	padding-top: 225px;
+}
+.emptyParag1{
+	font-family: "ScepticaLite";
+	font-size: 18px;
+	color: #58595b;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 50px;
+}
+.emptyParag2{
+	font-family: "ScepticaLite";
+	font-size: 18px;
+	color: #58595b;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+.korzinaEmptyBlock {
+  border-top: 1px solid #58595b;
+  position: relative;
+  bottom: 50px;
+  margin-left: 4%;
+  margin-right: 4%;
+	padding-left: 0;
+	padding-right: 0;
+}
+/****************CATALOG_PAGE*************/
+/****************FIRST_HEADER******************/
+.catalogHeaderMenu .catalogNavDef{
+	background-color: #8b8c8f;
+}
+.header .navbar-default .navbar-nav > .active > .catalogNavTitle{
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	-ms-transition: 0.25s;
+	transition: 0.25s;
+	background-image: none;
+	font-family: "ScepticaLite";
+}
+.navbar-default .navbar-nav > .active > .catalogNavTitle:hover, .navbar-default .navbar-nav > .active > .catalogNavTitle:focus{
+	color: #58595b;
+}
+.header .nav__1 .catalogNavTitle:hover, .header .nav__1 .catalogNavTitle:active, .header .nav__1 .catalogNavTitle:focus, .header .nav__2 .catalogNavTitle:focus, .header .nav__2 .catalogNavTitle:active, .header .nav__2 .catalogNavTitle:hover{
+	background: none;
+	color: #58595b;
+}
+.header .nav__3 .catalogNavTitle:hover, .header .nav__3 .catalogNavTitle:focus {
+  background: none;
+	color: #58595b;
+}
+.header .navbar-default .navbar-nav .nav__1 .catalogNavTitle{
+	background: none;
+	font-family: "ScepticaLite";
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	-ms-transition: 0.25s;
+	transition: 0.25s;
+}
+.header .navbar-default .navbar-nav .nav__2 .catalogNavTitle{
+	background: none;
+	font-family: "ScepticaLite";
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	-ms-transition: 0.25s;
+	transition: 0.25s;
+}
+.header .navbar-default .navbar-nav .nav__3 .catalogNavTitle{
+	background: none;
+	font-family: "ScepticaLite";
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	-ms-transition: 0.25s;
+	transition: 0.25s;
+}
+.header .catalogNameUser{
+	background-image: url("../img/userIcon.png");
+	padding-left: 25px;
+	transition: .25s;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	font-family: "Sceptika";
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #58595b;
+  background-repeat: no-repeat;
+  background-position: 0px 11px;
+  padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 50;
+	letter-spacing: 1px;
+}
+.header .catalogNameUser:hover, .header .catalogNameUser:focus, .header .catalogNameUser:active{
+	background-image: url("../img/userIconHover.png");
+	color: #00b0ad;
+	text-decoration: none;
+}
+.header .navbar-default .navbar-toggle .catalogIconBar{
+	background-color: #ffffff;
+}
+.search__a .catalogSearchIco:hover, .search__a .catalogSearchIco:focus, .search__a .catalogSearchIco:active{
+	color: #58595b;
+}
+.search__a span{
+	height: 25px;
+	width: 25px;
+}
+.medicationPic img{
+	max-width: 100px;
+  max-height: 200px;
+}
+.sendButtonSuccess{
+	font-family: "ScepticaLite";
+  font-size: 18px;
+  color: green;
+	margin: 0;
+	display: none;
+}
+.sendButtonFalse{
+	font-family: "ScepticaLite";
+  font-size: 18px;
+  color: red;
+	margin: 0;
+	display: none;
+}
+.enterDecoration{
+	bottom: 58px;
+}
+.regBlock2 .regFormEnterInput{
+	bottom: 42px;
+}
+.enterDecorationBottom{
+	bottom: 120px;
+}
+.regBlock2 .regFormForgetInput{
+	bottom: 0;
+}
+.forgetFormText{
+	display: inline-block;
+  position: relative;
+  top: 63px;
+  text-align: center;
+  left: 52px;
+}
+.modal-header.modal-header .closeForget.close{
+	top: -23px;
+}
+/******************CATALOGDROPDOWNMENU************************/
+.catalogDropMenu .navbar-nav {
+	float: none;
+	text-align: center;
+}
+.catalogDropMenu .navbar-nav li {
+	float: none;
+	display: inline-block;
+}
+.catalogDropMenu .navbar-default{
+	background-color: #00b0ad;
+}
+.catalogDropMenu  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background-color: #02908e;
+}
+.catalogDropMenu .navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+	font-size: 14px;
+	font-family: "Sceptica";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.catalogDropMenu .header .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .header .nav__1 a:focus {
+    background-image: url(../img/down__arrow.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+    position: relative;
+    left: 0;
+}
+.catalogDropMenu .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	background-color: #02908e;
+	background-image: url(../img/down__arrow.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: -1px;
+  position: relative;
+  left: 0;
+}
+.catalogDropMenu .dropdown-menu{
+	width: 650px;
+	z-index: 3000;
+}
+.catalogDropMenu .dropLeftMesh li a, .catalogDropMenu .dropRightMesh li a{
+	color: #58595b;
+	font-size: 14px;
+	font-family: "ScepticaLite";
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+}
+.catalogDropMenu .dropLeftMesh li a:hover, .catalogDropMenu .dropLeftMesh li a:focus, .catalogDropMenu .dropRightMesh li a:hover, .catalogDropMenu .dropRightMesh li a:focus{
+	text-decoration: none;
+	outline: none;
+}
+.catalogDropMenu .dropLeftMesh li a span, .catalogDropMenu .dropRightMesh li a span{
+	font-size: 12px;
+	color: #00b0ad;
+	position: relative;
+	bottom: 3px;
+}
+.catalogDropMenu .dropLeftMesh{
+	padding-left: 0;
+}
+.catalogDropMenu .dropLeftMesh li{
+	padding-left: 25px;
+	margin-top: 15px;
+}
+.catalogDropMenu .dropRightMesh{
+	padding-left: 0;
+}
+.catalogDropMenu .dropRightMesh li{
+	padding-left: 25px;
+	margin-top: 15px;
+}
+.catalogDropMenu .dropRightMesh li:hover, .catalogDropMenu .dropRightMesh li:focus{
+	border-left: 3px solid #00b0ad;
+	padding-left: 22px;
+}
+.catalogDropMenu .dropLeftMesh li:hover, .catalogDropMenu .dropLeftMesh li:focus{
+	border-left: 3px solid #00b0ad;
+	padding-left: 22px;
+}
+.catalogDropMenu .navbar-nav > li > .dropdown-menu{
+	background-color: #f1f1f1;
+	border-top: 15px solid #02908e;
+	padding-bottom: 30px;
+	border-bottom: 15px solid #02908e;
+	top: 49px;
+}
+.catalogDropMenu .collapse .navbar-nav > li > .dropDownRight{
+	left: auto;
+	right: 0;
+}
+.breadCrumbCustom.breadcrumb{
+	background-color: transparent;
+}
+.breadCrumbCustom.breadcrumb .breadCrumbMenu a{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "ScepticaLite";
+	color: #57585b;
+	letter-spacing: 1.7px;
+}
+.breadCrumbCustom.breadcrumb .active a{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "ScepticaLite";
+	color: #d0d0d2;
+	letter-spacing: 1.7px;
+}
+.breadCrumbCustom.breadcrumb > li + li:before{
+	color: #00b0ad;
+}
+.medicationAccordeonName{
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	transition: .2s;
+	font-family: "Sceptica";
+	text-transform: uppercase;
+	color: #58595b;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+.medicationAccordeonName:active, .medicationAccordeonName:focus, .medicationAccordeonName:hover{
+	font-family: "ScepticaBold";
+	color: #58595b;
+	text-decoration: none;
+}
+.medicationAccordeonName span{
+	position: relative;
+	bottom: 5px;
+	font-size: 12px;
+	color: #00b0ad;
+	font-family: "Sceptica";
+	text-transform: uppercase;
+}
+.dropDownAccordeon li{
+	cursor: pointer;
+	list-style: none;
+	padding-left: 15px;
+	line-height: 18px;
+	margin-top: 20px;
+	letter-spacing: 1.5px;
+}
+.dropDownAccordeon li:hover , .dropDownAccordeon li:active, .dropDownAccordeon li:focus{
+	border-left: 5px solid #00b0ad;
+	padding-left: 10px;
+}
+.dropDownAccordeon li.active{
+	border-left: 5px solid #00b0ad;
+	padding-left: 10px;
+}
+.dropDownAccordeonBlock .medicationAccordeonActive{
+	border-left: 5px solid #00b0ad;
+	padding-left: 10px;
+}
+.medicationAccordeonLi .medicationTextActive{
+	font-family: "ScepticaBold";
+}
+.accordeonCollapse{
+	font-size: 12px;
+	font-family: "Sceptica";
+	color: #a7aab0;
+}
+.dropDownAccordeonBlock{
+}
+.dropDownAccordeon{
+	padding-left: 0;
+	padding-top: 0px;
+	border-top: 2px solid #00b0ad;
+	border-right: 1px solid #d0d0d2;
+	border-bottom: 1px solid #d0d0d2;
+	padding-bottom: 20px;
+	width: 265px !important;
+	position: relative;
+	z-index: 200;
+	background-color: white;
+}
+.accordeonCatalog .row{
+	margin-left: 15px;
+	margin-right: 0;
+}
+.accordeonCollapse li{
+	margin-top: 0;
+}
+.accordeonCollapse li:hover, .accordeonCollapse li:focus, .accordeonCollapse li:active{
+	font-family: "ScepticaBold";
+	color: #58595b;
+}
+.accordeonCollapse li a{
+	margin-top: 0;
+}
+.accordeonCollapse li a:hover, .accordeonCollapse li a:focus, .accordeonCollapse li a:active{
+	font-family: "ScepticaBold";
+	color: #58595b !important;
+}
+.accordeonCollapse{
+	margin-top: 10px;
+}
+.catalogProductTitle{
+	font-family: "GothamBlack";
+	font-size: 28px;
+  text-transform: uppercase;
+	color: #00b0ad;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.catalogProductSpan{
+	font-family: "GothamLight";
+	font-size: 12px;
+	position: relative;
+	bottom: 10px;
+}
+.catalogProductBlock #owl-demo2 .item img{
+	display: block;
+  width: 100%;
+  height: auto;
+}
+.catalogProductBlock .owl-theme .owl-controls .owl-page{
+	color: #d0d0d2;
+}
+.catalogProductBlock .owl-theme .owl-controls .owl-page.active span, .catalogProductBlock .owl-theme .owl-controls.clickable .owl-page:hover span{
+	opacity: 100%;
+	background-color: #87d0cf;
+}
+
+.catalogFirstSelect{
+	background-color: white;
+	position: relative;
+	z-index: 2002;
+	width: 170px;
+	height: 40px;
+	border: 2px solid #d0d0d2;
+	font-family: "ScepticaLite";
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #58595b;
+	padding-left: 15px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	background-image: url("../img/arrowSelect.png");
+	background-repeat: no-repeat;
+	background-position: 142px 3px;
+	cursor: pointer;
+}
+.catalogFirstSelect:focus, .catalogFirstSelect:hover, .catalogFirstSelect:active{
+	background-position: 142px -93px;
+	border: 2px solid #00b0ad;
+}
+.catalogFirstSelectActive{
+	background-position: 142px -93px;
+	border: 2px solid #00b0ad !important;
+	display: block;
+}
+.catalogShowVal{
+	margin: 0;
+	position: relative;
+	top: 1px;
+	line-height: 17px;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.catalogShowVal span{
+	display: block;
+  color: #299283;
+  letter-spacing: 2px;
+}
+.catalogFirstSelectVal{
+	font-family: "ScepticaLite";
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #58595b;
+	padding-left: 15px;
+	margin-bottom: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #d0d0d2;
+	background-color: white;
+}
+.catalogFirstSelectVal:hover{
+	border-left: 3px solid #00b0ad;
+	padding-left: 12px;
+}
+.catalogFirstSelectContent{
+	opacity: 0;
+	position: relative;
+	z-index: 2000;
+	width: 170px;
+	border-left: 2px solid #00b0ad;
+	border-right: 2px solid #00b0ad;
+	border-bottom: 2px solid #00b0ad;
+	cursor: pointer;
+	top: -40px;
+	height: 0;
+}
+.sortingBlock1{
+	display: inline-block;
+	float: right;
+	margin-right: 30px;
+	position: absolute;
+	left: 58%;
+}
+.sortingBlock2{
+	display: inline-block;
+	float: right;
+	position: absolute;
+	left: 80%;
+}
+.unVisibleSelect{
+	visibility: hidden;
+}
+.catalogSelectsBlock{
+	margin-top: 35px;
+	height: 42px;
+}
+/*********************PRODUCTIONCATALOG*************************/
+.catalogProductionBlock .productionImg{
+	max-width: 260px;
+	max-height: 300px;
+}
+.catalogProductionBlock .productionTitle{
+	font-family: "ScepticaBold";
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #58595b;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
+.catalogProductionBlock .productionDetails{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #58595b;
+	border-bottom: 1px solid #00b0ad;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	min-height: 70px;
+	letter-spacing: 1px;
+}
+.catalogProductionBlock .productionBuyIcon{
+	background: url("../img/butIcon.png") 0px -3px no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+.catalogProductionBlock .productionBuyIcon:hover , .catalogProductionBlock .productionBuyIcon:active, .catalogProductionBlock .productionBuyIcon:focus{
+	background-position: 0px -54px;
+}
+.catalogProductionBlock .productionLikeIcon{
+	padding-right: 30px;
+	margin-right: 10px;
+	border-right: 1px solid #e7e7e8;
+	background: url("../img/likeIcon.png") 0px -2px no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+.catalogProductionBlock .productionLikeIcon:hover, .catalogProductionBlock .productionLikeIcon:active, .catalogProductionBlock .productionLikeIcon:focus{
+	background-position: 0px -59px;
+}
+.catalogProductionBlock .productionPriceBlock{
+	float: right;
+	display: inline-block;
+}
+.catalogProductionBlock .productionBuyBlock{
+	display: inline-block;
+}
+.catalogProductionBlock .productionPriceAndBuy{
+	padding-top: 10px;
+}
+.catalogProductionBlock .productionImgBlock{
+	text-align: center;
+	cursor: pointer;
+}
+.catalogProductionBlock .productionPrice{
+	font-family: "ScepticaLite";
+	color: #343537;
+	font-size: 20px;
+	text-transform: uppercase;
+	position: relative;
+	bottom: 5px;
+	z-index: 100;
+	letter-spacing: 1px;
+}
+.catalogProductionBlock .productionAddHover{
+	background: url("../img/productionAddHover.png") center center no-repeat;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	width: 250px;
+	top: 120px;
+	display: none;
+}
+.productionDetailsBlock{
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+.pageCounterWrapper{
+	transition: .25s;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #d0d0d2;
+	display: inline-block;
+	padding-top: 11px;
+	margin-right: -2px;
+	cursor: pointer;
+}
+.pageCounterWrapper:hover, .pageCounterWrapper:focus, .pageCounterWrapper:active{
+	border: 1px solid #343537;
+}
+.pageCounterWrapper.active{
+	border: 1px solid #343537;
+}
+.pageCounterBlock1{
+	text-align: center;
+	margin-bottom: 100px;
+}
+.pageCounterBlock2{
+	text-align: center;
+	display: none;
+	margin-bottom: 100px;
+}
+.pageCounterNum{
+	font-size: 16px;
+	color: #343537;
+	font-family: "ScepticaLite";
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.pageCounterNum:hover, .pageCounterNum:focus, .pageCounterNum:active{
+	color: #343537;
+	text-decoration: none;
+}
+.searchCatalogBlock{
+	width: 690px;
+	height: 55px;
+	background-color: #717275;
+	position: absolute;
+	z-index: 50;
+	top: -60px;
+	right: -240px;
+	opacity: 0;
+}
+.searchInputCatalog{
+	display: block;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	border-bottom: #ffffff;
+	border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+	width: 550px;
+	height: 25px;
+	padding-top: 30px;
+	position: relative;
+	right: 25px;
+	color: white;
+	font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 12px;
+	padding-bottom: 13px;
+  top: 0px;
+}
+.catalogSearchIco{
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	transition: .25s;
+	padding-right: 7px;
+	padding-bottom: 18px;
+	color: #ffffff;
+}
+.catalogSearchIco:focus, .catalogSearchIco:hover, .catalogSearchIco:active{
+	color: #ffffff;
+}
+.catalogSearchIcoActive{
+	color: #ffffff;
+}
+.catalogSearchIco:focus{
+	outline: none;
+}
+.searchInputCatalog:focus{
+	outline: none;
+}
+.searchInputCatalog::-webkit-input-placeholder {
+	color: white;
+	font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;
+}
+.searchInputCatalog::-moz-placeholder          {color: white;font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;}/* Firefox 19+ */
+.searchInputCatalog:-moz-placeholder           {color: white;font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;}/* Firefox 18- */
+.searchInputCatalog:-ms-input-placeholder      {color: white;font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;}
+.searchCatalogBtn{
+	cursor: pointer;
+	width: 45px;
+	height: 47px;
+	background-color: transparent;
+	padding-left: 10px;
+	background-color: transparent;
+	border: none;
+	padding-top: 11px;
+	position: relative;
+	left: 240px;
+	z-index: 100;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+.searchCatalogBtn:focus{
+	outline: none;
+}
+.searchCatalogBtn:focus, .searchCatalogBtn:active, .searchCatalogBtn:hover{
+	background-color: #717275;
+}
+.catalogSearchBtnActive{
+		background-color: #717275;
+}
+.catalogNavDef{
+	position: relative;
+	z-index: 200;
+}
+.header__nav .navbar-header .searchInputCatalogMin{
+	width: 260px;
+  display: block;
+  position: relative;
+  top: -10px;
+	margin-left: 20px;
+}
+.header__nav .navbar-header .searchInputCatalogMin::-webkit-input-placeholder {
+	color: white;
+	font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;
+}
+.header__nav .navbar-header .searchInputCatalogMin::-moz-placeholder          {color: white;font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;}/* Firefox 19+ */
+.header__nav .navbar-header .searchInputCatalogMin:-moz-placeholder           {color: white;font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;}/* Firefox 18- */
+.header__nav .navbar-header .searchInputCatalogMin:-ms-input-placeholder      {color: white;font-family: "ScepticaItalic";padding-left: 0px; position: relative; bottom: 0px;}
+.catalogDropMenu  .navbar-default .navbar-nav > .active > .catalogNavTitle, .navbar-default .navbar-nav > .active > .catalogNavTitle:hover{
+	background-color: transparent;
+	top: -2px;
+}
+.navbar-default .navbar-nav > .active > .catalogNavTitle:focus{
+	top: 0;
+	background-color: transparent;
+}
+.catalogDropMenu .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: transparent;
+}
+.catalogDropMenu .navbar-default .navbar-toggle{
+	border-color: transparent;
+	z-index: 50;
+}
+.catalogDropMenu .navbar-default .navbar-toggle .icon-bar{
+	background-color: #ffffff;
+}
+.mobileCatalogTitle{
+	display: none;
+}
+.catalogDropMenu .dropRightMesh li {
+    width: 100%;
+}
+.catalogDropMenu .dropLeftMesh li {
+    width: 100%;
+}
+.mobileCatalogTitle{
+    color: white;
+    font-family: "ScepticaItalic";
+		display: none;
+    width: 79%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    left: 11%;
+		letter-spacing: 2px;
+		z-index: 1;
+}
+.header .navbar .navbar-nav .active{
+	top: -1px;
+}
+.header .catalogNoUser{
+	display: none;
+}
+/*******************CATALOGPODCAT**************************/
+/*******************CATALOGPODCAT RANGE*******************/
+.irs-from, .irs-to, .irs-single{
+	display: none;
+}
+.irs-slider {
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    background-position: 0 -120px;
+}
+.irs-slider.state_hover, .irs-slider:hover {
+    background-position: 0 -120px;
+}
+.irs-min, .irs-max{
+	display: none;
+}
+.price_inner_1{
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 40px;
+	border: 1px solid #d0d0d2;
+	color: #58595b;
+	font-family: "Sceptica";text-align: center; position: relative; bottom: 1px;
+	font-size: 16px;
+}
+.price_inner_2{
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 40px;
+	border: 1px solid #d0d0d2;
+	color: #58595b;
+	font-family: "Sceptica";text-align: center; position: relative; bottom: 1px;
+	font-size: 16px;
+}
+.filtersBlock{
+	padding-bottom: 60px;
+}
+.filtersInputs{
+	margin-top: 25px;
+	position: relative;
+	z-index: 200;
+}
+.price_inner_1::-webkit-input-placeholder {
+	color: #58595b;
+	font-family: "Sceptica";text-align: center; position: relative; bottom: 1px;
+	font-size: 16px;
+}
+.price_inner_1::-moz-placeholder          {color: #58595b;font-family: "Sceptica";text-align: center; position: relative; bottom: 1px; font-size: 16px;}/* Firefox 19+ */
+.price_inner_1:-moz-placeholder           {color: #58595b;font-family: "Sceptica";text-align: center; position: relative; bottom: 1px; font-size: 16px;}/* Firefox 18- */
+.price_inner_1:-ms-input-placeholder      {color: #58595b;font-family: "Sceptica";text-align: center; position: relative; bottom: 1px; font-size: 16px;}
+.price_inner_2::-webkit-input-placeholder {
+	color: #58595b;
+	font-family: "Sceptica";text-align: center; position: relative; bottom: 1px;
+	font-size: 16px;
+}
+.price_inner_2::-moz-placeholder          {color: #58595b;font-family: "Sceptica";text-align: center; position: relative; bottom: 1px; font-size: 16px;}/* Firefox 19+ */
+.price_inner_2:-moz-placeholder           {color: #58595b;font-family: "Sceptica";text-align: center; position: relative; bottom: 1px; font-size: 16px;}/* Firefox 18- */
+.price_inner_2:-ms-input-placeholder      {color: #58595b;font-family: "Sceptica";text-align: center; position: relative; bottom: 1px; font-size: 16px;}
+.priceInnerTitle1{
+	font-family: "CenturyGothicRegular";
+	font-size: 14px;
+	color: #58595b;
+	margin-bottom: 5px;
+}
+.priceInnerTitle2{
+	font-family: "CenturyGothicRegular";
+	font-size: 14px;
+	color: #58595b;
+	margin-bottom: 5px;
+}
+.filterWrapper{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.podCatPriceTitle{
+	font-family: "ScepticaMedium";
+	font-size: 14px;
+	color: #58595b;
+	position: relative;
+	top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.irs {
+    height: 30px;
+}
+.medicamentsFilterWrapper{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.medicamentsFilterTitle{
+	top: 30px;
+}
+.podCatLabel{
+	cursor: pointer;
+	display: block;
+	background-image: url(../img/checkBoxLabel.png);
+  background-repeat: no-repeat;
+  padding-left: 31px;
+  position: relative;
+  top: 35px;
+}
+.medicamentsFilterWrapper .activeCheck{
+	background-image: url(../img/checkBoxActive.png);
+}
+.medicamentsFilterWrapper .activeOffCheck{
+	background-image: url(../img/checkBoxActive.png);
+}
+.podCatLabel span{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #58595b;
+	text-transform: uppercase;
+	position: relative;
+  top: -3px;
+	letter-spacing: 1px;
+}
+.podCatLabel span p{
+	font-size: 12px;
+	font-family: "Sceptica";
+	color: #00b0ad;
+	display: inline-block;
+	position: relative;
+	top: -5px;
+}
+.lineDivision{
+	width: 100%;
+	height: 1px;
+	background-color: #d0d0d2;
+	position: relative;
+	top: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: -15px;
+}
+.productionSaleImg{
+	background: url(../img/share.png) center center no-repeat;
+	width: 80px;
+	height: 25px;
+	top: 25px;
+  left: 185px;
+	position: absolute;
+	z-index: 1002;
+}
+.productionPrice span{
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #ff4622;
+	position: relative;
+	top: -10px;
+	text-decoration: line-through;
+}
+.productionDetailsBlock .productionNotTitle{
+	color: #9a9ca0;
+}
+.productionDetailsBlock .productionNotDetails{
+	color: #9a9ca0;
+	border-bottom: 1px solid #9a9ca0;
+}
+.productionDetailsBlock .productionNotPrice{
+	color: #9a9ca0;
+}
+.productionDetailsBlock .productionNotLikeIcon{
+	background-image: url(../img/notLikeIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0px;
+}
+.productionDetailsBlock .productionNotLikeIcon:hover, .productionDetailsBlock .productionNotLikeIcon:focus, .productionDetailsBlock .productionNotLikeIcon:active{
+	background-image: url(../img/notLikeIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0px;
+}
+.productionDetailsBlock .productionNotBuyIcon{
+	background-image: url(../img/notBuyIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0px;
+}
+.productionDetailsBlock .productionNotBuyIcon:hover, .productionDetailsBlock .productionNotBuyIcon:focus, .productionDetailsBlock .productionNotBuyIcon:active{
+	background-image: url(../img/notBuyIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0px;
+}
+.catalogBottomDecoration{
+	position: absolute;
+	height: 700px;
+	width: 390px;
+	background: url(../img/catalogBottomDecor.png) no-repeat;
+	top: 1760px;
+	background-size: cover;
+}
+.favouritesSelect2{
+	left: 70%;
+}
+.favouritesSelect1{
+	left: 30%;
+}
+/****************************************CardPage************************************/
+/****************************************CarouselProduct****************************/
+#sync1 .item{
+		cursor: pointer;
+		height: 400px;
+    background: white;
+  	padding: 50px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+		-o-border-radius: 2px;
+		-ms-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+		border: 1px solid #d0d0d2;
+}
+#sync1 .item img{
+	max-width: 75%;
+	max-height: 300px;
+}
+#sync2 .item{
+		display: none;
+		transition: 1.5s;
+		-webkit-transition: 1.5s;
+		-moz-transition: 1.5s;
+		-o-transition: 1.5s;
+		-ms-transition: 1.5s;
+    background: white;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+		-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+		-o-border-radius: 2px;
+		-ms-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+		border: 1px solid #d0d0d2;
+}
+#sync2 .item img{
+	max-width: 35px;
+	max-height: 35px;
+}
+#sync2 .item h1{
+  font-size: 18px;
+}
+#sync2 .synced .item{
+  background: #00b0ad;
+}
+.largePhoto{
+	background: url(../img/largePhoto.png) no-repeat;
+	width: 20px;
+	height: 25px;
+	position: absolute;
+	left: 300px;
+	bottom: 25px;
+}
+.largePhoto:hover, .largePhoto:active, .largePhoto:focus{
+	background-position: 0px -55px;
+}
+.fancybox-nav span {
+    visibility: visible;
+}
+
+.fancybox-nav {
+    width: 80px;
+}
+
+.fancybox-outer .fancybox-prev {
+    left: -10px;
+}
+
+.fancybox-outer .fancybox-next {
+    right: -10px;
+}
+.owl-wrapper-outer{
+	margin-top: 35px;
+}
+.productionCardTitle{
+	margin-bottom: 0px;
+	font-family: "ScepticaBold";
+	font-size: 24px;
+	color: #58595b;
+	text-transform: uppercase;
+}
+.productionCardDescr{
+	margin-bottom: 5px;
+	font-family: "ScepticaMedium";
+	font-size: 18px;
+	color: #58595b;
+	text-transform: uppercase;
+}
+.productionCardArticul{
+	margin-bottom: 10px;
+	font-family: "ScepticaLite";
+	font-size: 12px;
+	color: #58595b;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #00b0ad;
+	padding-bottom: 10px;
+	width: 150px;
+	text-transform: uppercase;
+}
+.productionCardArticul span{
+	font-family: "Sceptica";
+	font-size: 12px;
+	color: #58595b;
+}
+.productionCardMainInfo{
+	padding-top: 30px;
+}
+.productionCardMoreText{
+	letter-spacing: 1.5px;
+	font-family: "ScepticaLite";
+	font-size: 12px;
+	color: #767678;
+	margin-bottom: 5px;
+}
+.productionCardMoreText span{
+	font-family: "Sceptica";
+	font-size: 12px;
+	color: #58595b;
+}
+.productionCardMoreInfo{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.productionCardPriceTitle{
+	font-family: "Sceptica";
+	color: #58595b;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.productionCardPriceNum{
+	text-transform: uppercase;
+	font-family: "ScepticaBold";
+	font-size: 24px;
+	color: #58595b;
+	margin-bottom: 0;
+}
+.productionCardPrice{
+	display: inline-block;
+	padding-left: 10px;
+	border-left: 4px solid #00b0ad;
+}
+.productionCardBuyBlock .productionCardBuyBtn.btn-success{
+	display: inline-block;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	transition: .5s;
+	width: 350px;
+	height: 50px;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	background-color: #00b0ad;
+	outline: none;
+	border: 0;
+	font-family: "ScepticaBold";
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+.productionCardBuyBlock .productionCardBuyBtn.btn-success:hover,.productionCardBuyBlock .productionCardBuyBtn.btn-success:focus,.productionCardBuyBlock .productionCardBuyBtn.btn-success:active{
+	background-color: #3cc0be;
+	outline: none;
+	border: 0;
+	letter-spacing: 3px;
+}
+.productionCardLikeImg{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	background: url(../img/cardLike.png) no-repeat;
+	background-color: transparent;
+	background-position: 14px 11px;
+}
+.productionCardLikeImg:hover, .productionCardLikeImg:active, .productionCardLikeImg:focus{
+		background-position: 14px -44px;
+}
+.productionCardLikeBlock{
+	display: inline-block;
+	position: relative;
+	margin-left: 30px;
+	right: 30px;
+	bottom: 10px;
+}
+.buy4oneClick{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	display: block;
+	text-transform: uppercase;
+	font-family: "ScepticaMedium";
+	font-size: 12px;
+	color: #58595b;
+	width: 370px;
+	text-align: center;
+	margin-top: 20px;
+	letter-spacing: 1.5px;
+}
+.buy4oneClick:hover, .buy4oneClick:focus, .buy4oneClick:active{
+	color: #58595b;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+.cardToggleMenu{
+	transition: .75s;
+	-webkit-transition: .75s;
+	-moz-transition: .75s;
+	-o-transition: .75s;
+	-ms-transition: .75s;
+	display: inline-block;
+	width: 49.8%;
+	height: 45px;
+	background-color: #f0f0f1;
+	border-bottom: 7px solid #8b8b8d;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+.cardToggleMenu:hover, .cardToggleMenu:active, .cardToggleMenu:focus{
+	border-bottom: 7px solid #3cc0be;
+}
+.cardToggleMenuActive{
+	border-bottom: 7px solid #3cc0be;
+}
+.cardToggleMenu a{
+	font-family: "ScepticaMedium";
+	font-size: 13px;
+	color: #757577;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	top: 3px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.cardToggleMenu a:hover, .cardToggleMenu a:focus, .cardToggleMenu a:active{
+	text-decoration: none;
+	color: #757577;
+}
+.cardDetailTitle{
+	font-family: "Sceptica";
+	font-size: 16px;
+	color: #58595b;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+.cardDetailLi{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #58595b;
+	list-style: none;
+	letter-spacing: 1.5px;
+}
+.cardDetailWrapper{
+	margin-left: 100px;
+	margin-right: 100px;
+	z-index: 50;
+	position: relative;
+}
+.cardDetailInfo{
+	display: block;
+	background-color: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cardPayLi{
+	list-style: none;
+	font-family: "ScepticaMedium";
+	font-size: 14px;
+	color: #58595b;
+	text-transform: uppercase;
+}
+.cardPayDetails{
+	font-size: 14px;
+	color: #58595b;
+	font-family: "ScepticaLite";
+	margin-left: 20px;
+}
+.cardPayInfo{
+	margin-bottom: 0px;
+	display: none;
+	background-color: #f9f9f9;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.cardDetailInfo{
+	margin-bottom: 0px;
+}
+.cardSimilarProducts{
+	display: none;
+}
+.cardsToggleMenus{
+	margin-top: 40px;
+}
+.productionTrashIcon{
+	background: url(../img/trashIcon.png) 0px -3px no-repeat !important;
+}
+.productionTrashIcon:hover, .productionTrashIcon:active, .productionTrashIcon:focus{
+	background: url(../img/trashIcon.png) 0px -57px no-repeat !important;
+}
+.cardBottomDecoration{
+	top: 807px;
+	z-index: 1;
+}
+.sendButtonBlock .orderStartBtn{
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	background-color: #5e529e;
+	letter-spacing: 1px;
+	position: relative;
+	left: 7px;
+}
+.sendButtonBlock .orderStartBtn:hover,.sendButtonBlock .orderStartBtn:focus,.sendButtonBlock .orderStartBtn:active{
+	letter-spacing: 2px;
+	background-color: #5e529e;
+}
+.sendButtonBlock .continueBuysBtn{
+	padding: 5px 0px;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	letter-spacing: 1px;
+	position: relative;
+	left: 7px;
+	margin-bottom: 10px;
+}
+.continueBuysBtn:hover, .continueBuysBtn:active, .continueBuysBtn:focus{
+	background-color: #00b0ad;
+	letter-spacing: 2px;
+}
+.modal-header .buyCompleteText{
+	left: 80px;
+}
+.productIsDone{
+	font-family: "ScepticaLite";
+	font-size: 18px;
+	color: #63656a;
+	position: relative;
+	left: 50px;
+	bottom: 35px;
+}
+.buyCompleteDecoration{
+	bottom: 15px;
+}
+.modal-header .buyCompleteClose{
+	top: -20px;
+}
+/******************************ContactsPage***********************/
+.contactsLocationIcon{
+	background: url(../img/locationIcon.png) no-repeat;
+	width:50px;
+	height: 50px;
+	display: inline-block;
+	cursor: pointer;
+}
+.contactsPhoneIcon{
+	background: url(../img/locationPhoneIcon.png) no-repeat;
+	width:50px;
+	height: 50px;
+	display: inline-block;
+	cursor: pointer;
+}
+.contactsNavIcon{
+	background: url(../img/locationNavigationIcon.png) no-repeat;
+	width:50px;
+	height: 50px;
+	display: inline-block;
+	cursor: pointer;
+}
+.contactsLocationTextBlock{
+	display: inline-block;
+	padding-left: 15px;
+}
+.contactsLocationTitle{
+	font-family: "ScepticaMedium";
+	font-size: 16px;
+	color: #58595b;
+	margin-bottom: 0;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.contactsLocationTitle2{
+	font-family: "Sceptica";
+	font-size: 16px;
+	color: #58595b;
+	margin-bottom: 0;
+	line-height: 20px;
+	letter-spacing: 1.5px;
+}
+.contactsLocationTextBlock2{
+	display: inline-block;
+	padding-left: 15px;
+	position: relative;
+	bottom: 16px;
+}
+.contactsLocBlocks{
+	border-right: 1px solid #d0d0d2;
+}
+.contactsSkypeIcon{
+	background: url(../img/contactsSkypeIcon.png) no-repeat;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+.contactsVkIcon{
+	background: url(../img/contactsVkIcon.png) no-repeat;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+.contactsFbIcon{
+	background: url(../img/contactsFbIcon.png) no-repeat;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+.contactsLinkTitle{
+	font-family: "Sceptica";
+	font-size: 16px;
+	color: #58595b;
+	display: inline-block;
+	position: relative;
+	bottom: 12px;
+	padding-left: 5px;
+	letter-spacing: 1.5px;
+}
+.contactsLinkA{
+	display: inline-block;
+	margin-right: 65px;
+}
+.contactsLinkA:hover, .contactsLinkA:focus, .contactsLinkA:active{
+	text-decoration: none;
+}
+.contactsSocialLinks{
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 35px;
+}
+.mapNav{
+	margin-bottom: 50px;
+}
+.mapBlock{
+	width: 100%;
+	height: 600px;
+}
+.contactsNameTitle, .contactsEmailTitle, .contactsMessageTitle{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+	letter-spacing: 1.3px;
+}
+.contactsInput{
+	width: 265px;
+	height: 50px;
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	padding-left: 20px;
+	outline: 0;
+	border: 1px solid #d0d0d2;
+}
+.contactsInput:active, .contactsInput:focus{
+	outline: 0;
+	border-left: 3px solid #00b0ad;
+}
+.contactsInputEmail{
+	width: 370px;
+	height: 50px;
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	padding-left: 20px;
+	outline: 0;
+	border: 1px solid #d0d0d2;
+}
+.contactsInputEmail:active, .contactsInputEmail:focus{
+	outline: 0;
+	border-left: 3px solid #00b0ad;
+}
+.contactsNameInput{
+	display: inline-block;
+}
+.contactsEmailInput{
+	display: inline-block;
+}
+.contactsMessageBlock{
+	margin-top: 30px;
+}
+.contactsMessageArea{
+	width: 640px;
+	height: 145px;
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: 0;
+	border: 1px solid #d0d0d2;
+}
+.contactsMessageArea:active, .contactsMessageArea:focus{
+	border-left: 3px solid #00b0ad;
+}
+.contactsSendBtn.btn-success{
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	width: 300px;
+	height: 50px;
+	font-family: "ScepticaBold";
+	font-size: 16px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #00b0ad;
+	border: 0;
+	outline: 0;
+}
+.contactsSendBtn.btn-success:focus, .contactsSendBtn.btn-success:active, .contactsSendBtn.btn-success:hover{
+	background-color: #00b0ad;
+	letter-spacing: 4px;
+}
+.contactsBtnWrapper{
+	text-align: center;
+	margin-top: 60px;
+}
+.contactsOsmotrCome{
+	position: relative;
+	top: -45px;
+}
+.answerSection{
+	margin-bottom: 30px;
+}
+.catalogMainBlock{
+	background: url(../img/catalogBottomDecor.png) left bottom no-repeat;
+}
+/*************************FIX_2 AddSimilarProducts*********************/
+#owl-demo5 .item{
+  margin: 45px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+#owl-demo5 .item img{
+  display: block;
+	max-width: 250px;
+	max-height: 250px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+	background-color: #02908e;
+	color: white;
+}
+/***************************FIX_2 Fix dropdownMenu********************/
+.catalogDropMenu .container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.catalogDropMenu .navbar-default .navbar-collapse{
+	padding-left: 0;
+	padding-right: 0;
+}
+.contactsMainBlock{
+	background: none !important;
+}
+/************************INFOB_TITLE**********************/
+.infobTitle{
+	font-family: "ScepticaBold";
+	font-size: 18px;
+	color: #58595b;
+	letter-spacing: 1.3px;
+}
+.infobDescr{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #58595b;
+	letter-spacing: 1.8px;
+	margin-bottom: 45px;
+	line-height: 28px;
+}
+.favouritesProductBlock{
+	width: 100% !important;
+	float: left !important;
+}
+.infobTextBlock{
+	margin-top: 0;
+}
+.infobTextWrapper{
+	margin-bottom: 70px;
+}
+.infobProductBlock{
+	width: 100% !important;
+	float: left;
+}
+.infobTextWrapper .infoBProductTitle{
+	margin-top: 0;
+}
+/*********************blogFirstPage*******************/
+.blogHeader{
+	background: url(../img/blogHeader.png) center center no-repeat;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	position: relative;
+	bottom: 25px;
+	margin-bottom: -10px;
+}
+.blogHeaderTitle{
+	font-family: "GothamBlack";
+	font-size: 48px;
+	color: #ffffff;
+	letter-spacing: 1.3px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 48px;
+}
+.blogPicture{
+	background-color: #57585b;
+	border: 6px solid #efeded;
+	width: 100%;
+}
+.blogPicture img{
+	width: 100%;
+	height: auto;
+	max-width: 760px;
+}
+.blogMonth{
+	height: 90px;
+	width: 90px;
+	border-top: 5px solid #00b0ad;
+	border-bottom: 5px solid #00b0ad;
+	background-color: #57585b;
+	text-align: center;
+}
+.blogMonthNum{
+	font-family: "CenturyGothicBold";
+	font-size: 30px;
+	color: #fefefe;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	cursor: pointer;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+}
+.blogMounthTitle{
+	font-size: 11px;
+	color: #fefefe;
+	font-family: "CenturyGothicBold";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 5px;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+}
+.blogYear{
+	width: 90px;
+	height: 30px;
+	background-color:#00b0ad;
+	text-align: center;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	cursor: pointer;
+}
+.blogYearNum{
+	font-family: "CenturyGothicBold";
+	color: #fefefe;
+	letter-spacing: 5px;
+	font-size: 12px;
+	padding-top: 10px;
+}
+.blogData{
+	position: relative;
+	left: 25px;
+	bottom: 50px;
+	display: inline-block;
+	cursor: pointer;
+}
+.blogTextBlock {
+  display: inline-block;
+  width: 87.4%;
+  padding-left: 80px;
+	padding-top: 15px;
+}
+.blogTextTitle{
+	font-family: "ScepticaBold";
+	color: #58595b;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.blogText{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #58595b;
+	letter-spacing: 1.4px;
+	margin-bottom: 20px;
+}
+.blogReadMore button{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	width: 100px;
+	height: 30px;
+	background-color: #00b0ad;
+	border: 0;
+	color: #ffffff;
+	font-size: 11px;
+	font-family: "CenturyGothicBold";
+	text-transform: uppercase;
+	background-image: url(../img/readMoreArrow.png);
+	background-repeat: no-repeat;
+	padding-right: 15px;
+	background-position: 73px 12px;
+	float: right;
+	position: relative;
+	left: 1px;
+}
+.blogReadMore button:hover{
+	letter-spacing: 1.7px;
+	background-position: 80px 12px;
+}
+.blogContent{
+	border-bottom: 2px solid #00b0ad;
+	margin-bottom: 50px;
+}
+.breadCrumbBlock .breadCrumbBlog{
+	padding-left: 0;
+}
+.breadCrumbBlock{
+	margin-top: 20px;
+}
+.blogSearchInput{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	width: 100%;
+	height: 50px;
+	border: 5px solid #efeded;
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	position: relative;
+	bottom: 1px;
+	padding-left: 25px;
+	background: url(../img/blogSearch.png) no-repeat;
+	background-position: 320px 10px;
+	margin-bottom: 50px;
+}
+.blogSearchInput:focus, .blogSearchInput:active{
+	outline: none;
+	background-position: 400px 10px;
+}
+.blogSearchInput::-webkit-input-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	position: relative;
+	bottom: 1px;
+}
+.blogSearchInput::-moz-placeholder     {
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	position: relative;
+	bottom: 1px;
+	}/* Firefox 19+ */
+.blogSearchInput:-moz-placeholder      {
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	position: relative;
+	bottom: 1px;
+	}/* Firefox 18- */
+.blogSearchInput:-ms-input-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 16px;
+	color: #63656a;
+	position: relative;
+	bottom: 1px;
+}
+.blogPopularTitle{
+	font-family: "ScepticaMedium";
+	color: #58595b;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.blogPopularPosts{
+	padding-top: 40px;
+	border-top: 3px solid #00b0ad;
+	padding-bottom: 40px;
+}
+.blogPopularPic{
+	width: 120px;
+	height: auto;
+	max-height: 90px;
+	overflow: hidden;
+	display: inline-block;
+	border: 5px solid #efeded;
+}
+.blogPopularPic img{
+	min-width: 120px;
+  min-height: 90px;
+  width: 170%;
+  position: relative;
+  right: 30px;
+}
+.blogPopularDetails{
+	display: inline-block;
+	width: 65%;
+	padding-left: 20px;
+	position: relative;
+  bottom: 30px;
+}
+.blogPopularDetailsTitle{
+	font-family: "ScepticaBold";
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #58595b;
+}
+.blogPopularDetailsBtn{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	width: 25px;
+	height: 20px;
+	background-color: #00b0ad;
+	border: 0;
+	background-image: url(../img/readMoreArrow.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.blogPopularDetailsBtn:hover{
+	width: 50px;
+}
+.blogPopularDetailsBtn:focus{
+	outline: 0;
+}
+.blogPopularDetailsData{
+	display: inline-block;
+	font-family: "ScepticaBold";
+	font-size: 13px;
+	color: #00b0ad;
+	position: relative;
+	bottom: 4px;
+	letter-spacing: 2px;
+	padding-left: 10px;
+}
+.mainBlog{
+	margin-bottom: 80px;
+}
+/****************BLOG_VNUTR******************/
+.vnutrButton button{
+	width: 175px !important;
+	background-position: 150px 12px !important;
+	outline: none;
+	left: 30px;
+}
+.vnutrButton button:hover{
+	background-position: 155px 12px !important;
+}
+.vnutrButton button:focus{
+	outline: none;
+}
+.vnutrTextBlock{
+	width: 100% !important;
+	padding-left: 30px;
+}
+.blogFaceBook{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #757577;
+	background: url(../img/blogfacebook.png) center center no-repeat;
+	background-color: white;
+}
+.blogFaceBook:hover{
+	background-color: #efeded;
+}
+.blogVk{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #757577;
+	background: url(../img/blogvk.png) center center no-repeat;
+	margin-top: 25px;
+}
+.blogVk:hover{
+	background-color: #efeded;
+}
+.blogSocButtons{
+	padding-left: 40px;
+	margin-top: 60px;
+}
+.leaveCommentTitleWrapper{
+	background-color: #757577;
+	height: 50px;
+	width: 100%;
+	border-left: 10px solid #00b0ad;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+.leaveCommentTitleWrapper:hover .leaveCommentTitle{
+	letter-spacing: 4px;
+}
+.leaveCommentTitle{
+	font-family: "ScepticaMedium";
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 15px;
+	padding-left: 20px;
+	transition: 1s;
+}
+.leaveCommentGrid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.blogStarYes{
+	background: url(../img/blogStarGood.png) center center no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+.blogStarNo{
+	background: url(../img/blogStarEmpty.png) center center no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+.blogName{
+	display: inline-block;
+	padding-left: 8px;
+	position: relative;
+	bottom: 2px;
+}
+.blogRate{
+	padding-right: 10px;
+	border-right: 1px solid #d0d0d2;
+	display: inline-block;
+}
+.blogNameTitle{
+	font-family: "ScepticaLite";
+	font-size: 12px;
+	color: #58595b;
+	margin-bottom: 0;
+	padding-bottom: 15px;
+}
+.blogCommentTitle{
+	font-family: "ScepticaBold";
+	color: #58595b;
+	font-size: 14px;
+	margin-top: 0;
+}
+.blogCommentText{
+	font-family: "ScepticaLite";
+	color: #58595b;
+	font-size: 14px;
+	margin-top: 0;
+}
+.blogComment{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d0d0d2;
+	margin-bottom: 70px;
+}
+.blogCommentButton{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	width: 300px;
+	height: 50px;
+	background-color: transparent;
+	border: 2px solid #3cc0be;
+	outline: none;
+	font-family: "ScepticaMedium";
+	color: #3cc0be;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.blogCommentButton:focus{
+	outline: none;
+}
+.blogCommentButton:hover{
+	letter-spacing: 4px;
+}
+.blogButton{
+	text-align: center;
+}
+/********************************CardFix************************/
+.cardProductionLikeBtn{
+	display: inline-block;
+}
+.productionCardBuyBlock{
+	margin-top: 30px;
+}
+.buy4oneClickBtn.btn-success.productionCardBuyBtn{
+	background-color: #a1d3a0;
+}
+.buy4oneClickBtn.btn-success.productionCardBuyBtn:hover{
+	background-color: #A1D1D9;
+}
+.cardProductBlock{
+	width: 100% !important;
+}
+.similarProductsTitleBlock{
+	margin-top: 50px;
+}
+.cardTitleRightLine{
+	display: inline-block;
+  height: 5px;
+  width: 64.6%;
+  background-color: #74d4d2;
+}
+.cardProductTitle{
+	display: inline-block;
+  width: 35%;
+	margin-bottom: 0;
+}
+#owl-demo5 .owl-pagination{
+	display: none;
+}
+#owl-demo5 .owl-controls .owl-buttons div{
+	width: 75px;
+	height: 75px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	background-color: transparent;
+	border: 1px solid #74d4d2;
+}
+#owl-demo5 .owl-controls .owl-buttons .owl-prev{
+	background: url(../img/carouselLeft.png) center center no-repeat;
+	position: absolute;
+	left: -40px;
+	bottom: 250px;
+}
+#owl-demo5 .owl-controls .owl-buttons .owl-next{
+	background: url(../img/carouselRight.png) center center no-repeat;
+	position: absolute;
+	right: -40px;
+	bottom: 250px;
+}
+.modal-bodyReg.modal-body{
+	padding-top: 100px;
+}
+.decorationRegisterRight.decotationRight{
+	bottom: 56px;
+}
+.icon_buy:focus{
+	outline: 0;
+}
+.header__nav .navbar-default .navbar-nav li a:hover, .header__nav .navbar-default .navbar-nav li a:focus, .header__nav .navbar-default .navbar-nav li a:active{
+	background-color: #02908e;
+	background-image: url(../img/down__arrow.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	top: -1px;
+	position: relative;
+	color: #ffffff;
+}
+/*********************************INDEXFIX******************************/
+.searchHeader.searchCatalogBtn:hover, .searchHeader.searchCatalogBtn:focus, .searchHeader.searchCatalogBtn:active{
+	background-color: #02908e;
+}
+.searchHeaderBlock.searchCatalogBlock{
+	background-color: #02908e;
+	top: -10px;
+	overflow: hidden;
+	height: 0;
+}
+.catalogSearchBtnActive2{
+	background-color: #02908e;
+}
+.owlSimilarWrapper{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 70px;
+}
+.accordeonCollapse li a{
+	font-size: 12px;
+	font-family: "Sceptica";
+	color: #a7aab0;
+}
+.accordeonCollapse li a:hover,.accordeonCollapse li a:focus, .accordeonCollapse li a:active{
+	text-decoration: none;
+	color: #a7aab0;
+}
+.catalogGreyCustom a{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	font-size: 14px !important;
+	color: #ffffff !important;
+	font-family: "ScepticaLite"!important;
+}
+.catalogGreyCustom a:hover, .catalogGreyCustom a:focus, .catalogGreyCustom a:active{
+	background-color: #797a7d !important;
+	background-image: none !important;
+	top: 0 !important;
+}
+/************************************OfferPage***********************/
+.offerProductionImg{
+	height: 200px;
+	width: 200px;
+	text-align: center;
+}
+.offerProductionImg img{
+	max-height: 200px;
+}
+.offerMedicationCountBlock{
+	text-align: center;
+	padding-top: 30px;
+}
+.offerMedicationTitle.medicationCountTitle{
+	padding-right: 110px;
+	padding-left: 0;
+}
+.offerProductBlock.col-sm-12{
+	padding-top: 70px;
+	padding-bottom: 35px;
+	border-top: 1px solid #58595b;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+.offerTextWrapper.infobTextWrapper {
+	margin-bottom: 0px;
+}
+.offerEnterDataTitle{
+	font-family: "ScepticaBlack";
+	font-size: 24px;
+	color: #58595b;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 0;
+}
+.offerEnterDataNeed{
+	font-size: 22px;
+	color: #58595b;
+	font-family: "ScepticaBold";
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.offerDataGrid.col-sm-12{
+	margin-left: 45px;
+	margin-right: 45px;
+	border-top: 1px solid #58595b;
+	padding-top: 60px;
+}
+.offerDataLine{
+	background-color: #00b0ad;
+	height: 2px;
+	width: 190px;
+	margin-bottom: 50px;
+	position: relative;
+	left: 43%;
+}
+.offerDataLineBlock{
+	text-align: center;
+}
+.offerUserEnterInput{
+	width: 465px;
+	height: 50px;
+	border: 1px solid #d0d0d2;
+	font-family: "ScepticaLite";
+	color: #63656a;
+	font-size: 16px;
+	padding-left: 20px;
+}
+.offerUserEnterInput:focus{
+	outline: 0;
+	border-left: 3px solid #00b0ad;
+}
+.offerUserEnterBlock{
+	margin-bottom: 30px;
+	width: 100%;
+	padding-left: 30%;
+  padding-right: 30%;
+}
+.offerSortingBlock1.sortingBlock1{
+	display: block;
+	float: left;
+	width: 100%;
+	padding-left: 30.5%;
+	padding-right: 29.8%;
+	position: absolute;
+	left: 0;
+}
+.offerSortingBlock2.sortingBlock2{
+	display: block;
+	float: left;
+	width: 100%;
+	padding-left: 30.5%;
+	padding-right: 29.8%;
+	position: absolute;
+	left: 0;
+}
+.offerCatalogFirstSelect.catalogFirstSelect{
+	height: 50px;
+	width: 465px;
+	border: 1px solid #d0d0d2;
+	background-position: 97% 10px !important;
+}
+.offerCatalogFirstSelect.catalogFirstSelect:focus, .offerCatalogFirstSelect.catalogFirstSelect:active{
+	border: 2px solid #00b0ad;
+}
+.offerCatalogFirstSelect.catalogFirstSelect:focus, .offerCatalogFirstSelect.catalogFirstSelect:active{
+
+}
+.offerFirstSelect.catalogFirstSelectContent{
+	width: 100%;
+}
+.offerShowVal.catalogShowVal{
+	top: 15px;
+}
+.offerSortingBlockWrapper{
+	height: 50px;
+}
+.offerSortingZ.offerFirstSelect.catalogFirstSelectContent{
+	z-index: 2004;
+}
+.offerFirstSelectZ.offerCatalogFirstSelect.catalogFirstSelect{
+	z-index: 2005;
+}
+.offerSortingWrapperMarg.offerSortingBlockWrapper{
+	margin-bottom: 50px;
+}
+.offerSumTitle{
+	letter-spacing: 1.5px;
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #58595b;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.offerSumNum{
+	letter-spacing: 1.5px;
+	font-family: "ScepticaBold";
+	font-size: 30px;
+	color: #58595b;
+	text-transform: uppercase;
+	line-height: 25px;
+}
+.offerSumNum span{
+	font-size: 20px;
+}
+.offerSum{
+	padding-top: 10px;
+	width: 200px;
+	border-top: 3px solid #00b0ad;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-bottom: 60px;
+}
+.offerSendBtn.contactsSendBtn.btn-success{
+	text-align: center;
+}
+.offerCompleteBtn{
+	text-align: center;
+	margin-bottom: 100px;
+}
+.modal.modal{
+	z-index: 5000;
+}
+.kabinetNavigationIco{
+	position: relative;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	-ms-border-radius: 50px;
+	background: url(../img/kabinetNavigation1.png) no-repeat;
+	background-color: white;
+	background-position: 7px 6px;
+	display: inline-block;
+}
+.kabinetLoginIco.kabinetNavigationIco{
+	background: url(../img/kabinetNavigation2.png) 7px 6px no-repeat;
+}
+.kabinetDostavkaIco.kabinetNavigationIco{
+	background: url(../img/kabinetNavigation3.png) 7px 6px no-repeat;
+}
+.kabinetZakazIco.kabinetNavigationIco{
+	background: url(../img/kabinetNavigation4.png) 7px 6px no-repeat;
+}
+.kabinetDelete.kabinetNavigationIco{
+	background: url(../img/kabinetNavigation5.png) 7px 6px no-repeat;
+}
+.kabinetExit.kabinetNavigationIco{
+	background: url(../img/kabinetNavigation6.png) 7px 6px no-repeat;
+}
+.kabinetNavigationText{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #58595b;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+.kabinetNavigationTitle:hover, .kabinetNavigationTitle:focus, .kabinetNavigationTitle:active{
+	color: #58595b;
+	text-decoration: none;
+}
+.kabinetNavigationTitle:hover .kabinetNavigationIco, .kabinetNavigationTitle:focus .kabinetNavigationIco, .kabinetNavigationTitle:active .kabinetNavigationIco{
+	background-position: 7px -25px;
+	background-color: #4dc1a7;
+}
+.kabinetNavigationActive{
+	background-position: 7px -25px !important;
+	background-color: #4dc1a7 !important;
+}
+.kabinetNavigationTitle{
+	display: block;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.kabinetLeftNav{
+	border-bottom: 2px solid #d0d0d2;
+	border-right: 2px solid #d0d0d2;
+	border-top: 4px solid #00b0ad;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+}
+.kabinetTitleBlock{
+	border-bottom: 2px solid #d0d0d2;
+	margin-bottom: 30px;
+}
+.kabinetTitleName.catalogProductTitle{
+	padding-left: 15px;
+}
+.kabinetPersonalDataTitle{
+	letter-spacing: 1.3px;
+	font-family: "GothamBlack";
+	font-size: 28px;
+	color: #d0d0d2;
+	text-transform: uppercase;
+}
+.kabinetPersonalDataTitle span{
+	font-family: "GothamMedium";
+}
+.kabinetPhoneInput.offerUserEnterInput::-webkit-input-placeholder {
+	color: #d0d0d2;
+}
+.kabinetPhoneInput.offerUserEnterInput::-moz-placeholder          {color: #d0d0d2;}/* Firefox 19+ */
+.kabinetPhoneInput.offerUserEnterInput:-moz-placeholder           {color: #d0d0d2;}/* Firefox 18- */
+.kabinetPhoneInput.offerUserEnterInput:-ms-input-placeholder      {color: #d0d0d2;}
+.kabinetPersonalDataSettings{
+	background: url(../img/settingIcon.png) center center no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-left: 15px;
+	position: relative;
+	top: 5px;
+}
+.kabinetContentWrapper{
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 230px;
+}
+.kabinetBtnBlock.offerCompleteBtn{
+	text-align: center;
+	margin-top: 70px;
+}
+.kabinetUserEnterBlock.offerUserEnterBlock{
+	padding-left: 0;
+	padding-right: 0;
+}
+#kabinetPersonalData{
+	display: block;
+}
+#kabinetLogin{
+	display: block;
+}
+#kabinetOffersShow{
+	display: none;
+}
+.kabinetStar{
+	font-family: "ScepticaBold";
+	color: #ed5565;
+	font-size: 14px;
+}
+.kabinetValidation{
+	margin-top: 10px;
+	color: #ed5565;
+	font-family: "ScepticaLite";
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.kabinetValidationFalseInput{
+	border-left: 3px solid #ed5565 !important;
+}
+.kabinetValidationFalse:before{
+	content: "xx";
+	color: transparent;
+	width: 20px;
+	height: 20px;
+	background: url(../img/closeKabinetButton.png) center center no-repeat;
+	position: relative;
+}
+.kabinetValidationFalse{
+	position: relative;
+	right: 20px;
+}
+.mustFieldsText{
+	font-family: "ScepticaLite";
+	font-size: 12px;
+	color: #ed5565;
+	text-align: right;
+	padding-right: 50px;
+}
+.kabinetSaveBtn.contactsSendBtn{
+	margin-right: 30px;
+}
+#kabinetLoginFix{
+	display: none;
+}
+.kabinetSortingBlock.offerSortingBlock2.sortingBlock2{
+	padding-left: 0;
+	padding-right: 0;
+	width: 53%;
+	left: 115px;
+}
+#kabinetDelivery{
+	display: block;
+}
+.kabinetTableWrapper.kabinetContentWrapper{
+	margin-left: 40px;
+	margin-right: 85px;
+}
+.myOfferTable.col-sm-12{
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 0px;
+}
+.myOfferTableMainGrid.col-sm-12{
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 150px;
+}
+.myOfferTableProducts.col-sm-12{
+	border-left: 1px solid #d0d0d2;
+	border-right: 1px solid #d0d0d2;
+	border-top: 1px solid #d0d0d2;
+	border-bottom: 1px solid #d0d0d2;
+	padding-left: 0;
+	padding-right: 0;
+}
+.orderingPardGrid.col-sm-6{
+	padding-left: 0;
+	padding-right: 0;
+}
+.orderingPartTitle{
+	height: 60px;
+	background-color: white;
+	border-top: 1px solid #4dc1a7;
+	border-bottom: 1px solid #4dc1a7;
+	border-left: 1px solid #4dc1a7;
+}
+.orderingPartText{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #58595b;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 20px;
+	letter-spacing: 1.3px;
+}
+.dataPartGrid.col-sm-2{
+	padding-left: 0;
+	padding-right: 0;
+}
+.oderingPartProductName{
+	font-family: "ScepticaMedium";
+	font-size: 15px;
+	color: #7197d0;
+	margin-bottom: 0;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+.oderingPartProductInfo{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #7197d0;
+	margin-bottom: 0;
+	letter-spacing: 1.2px;
+}
+.orderingPartProductPrice{
+	font-family: "ScepticaMedium";
+	font-size: 14px;
+	color: #58595b;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.orderingPartImage{
+	text-align: center;
+	height: 100px;
+	width: 110px;
+	display: inline-block;
+	padding-top:
+}
+.orderingPartProductDetails{
+	display: inline-block;
+	vertical-align: middle;
+	width: 246.31px;
+	border-right: 1px solid #e7e7e8;
+	height: auto;
+  margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.orderingPartImage img{
+	max-height: 100px;
+	max-width: 110px;
+}
+.orderingPartProduct{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom:
+}
+.orderingPartNumTitle{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #7197d0;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 0;
+	border-right: 1px solid #e7e7e8;
+	letter-spacing: 1.3px;
+}
+.orderingPartDateTitle{
+	font-family: "ScepticaMedium";
+	font-size: 14px;
+	color: #58595b;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 0;
+	border-right: 1px solid #e7e7e8;
+	letter-spacing: 1.3px;
+}
+.orderingPartCompleteTitle{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #58595b;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 0;
+	letter-spacing: 1.3px;
+	background: url(../img/completeTable.png) 12% center no-repeat;
+	padding-left: 15px;
+}
+.orderingPartNumOffer{
+	padding-top: 17px;
+	padding-bottom: 17px;
+	vertical-align: middle;
+}
+#myOffers1Table{
+	display: block;
+}
+#myOffers{
+	display: block;
+}
+.orderingPartCancelTitle.orderingPartCompleteTitle{
+	padding-left: 0;
+	background: none;
+}
+.orderingPartTitleBord.orderingPartTitle{
+	border-right: 1px solid #4dc1a7;
+}
+.kabinetDeleteAccText.offerUserEnterText.regFormText{
+	background: url(../img/warning.png) left center no-repeat;
+	padding-left: 50px;
+}
+#kabinetDeleteAccount{
+	display: block;
+}
+.active .collapse {
+    display: block;
+    visibility: visible;
+}
+.accountNavIc.icon-bar{
+	background-color: #dedede;
+}
+.accountNavBtn.navbar-toggle{
+	top: 5px;
+}
+.accountLeftGrid.col-sm-3{
+	width: 290px;
+}
+.orderingPhoneName{
+	display: none;
+}
+.block404 .title404.catalogProductTitle{
+	font-family: "ScepticaBlack";
+	font-size: 180px;
+	display: inline-block;
+	margin-bottom: 0;
+	line-height: 140px;
+}
+.block404 .error404.catalogProductTitle{
+	font-family: "ScepticaBlack";
+	font-size: 24px;
+	display: inline-block;
+	transform: rotate(-90deg) !important;
+	-webkit-transform: rotate(-90deg) !important;
+	-ms-transform: rotate(-90deg) !important;
+	-o-transform: rotate(-90deg) !important;
+	-moz-transform: rotate(-90deg) !important;
+	position: relative;
+	bottom: 50px;
+	right: 45px;
+	letter-spacing: 2px;
+}
+.pageNotFound{
+	font-family: "ScepticaBold";
+	font-size: 20px;
+	color: #8b8c8f;
+	text-transform: uppercase;
+	position: relative;
+	right: 35px;
+}
+.nameBlock404{
+	height: 150px;
+}
+.block404{
+	text-align: center;
+	height: 600px;
+	overflow: hidden;
+}
+.text404{
+	padding-top: 130px;
+}
+.line404{
+	width: 255px;
+	height: 5px;
+	background-color: #8b8c8f;
+	position: relative;
+	left: 438px;
+}
+.orderInsideGrid.col-sm-4{
+	padding-left: 0;
+	padding-right: 0;
+}
+.orderInsideText.orderingPartText{
+	color: #343537;
+}
+.orderInsideText .orderInsideInfo{
+	font-family: "ScepticaBold";
+}
+.orderInsideText .orderInsideStatus{
+	font-family: "ScepticaLite";
+	text-transform: none;
+	background: url(../img/completeTable.png) left center no-repeat;
+	padding-left: 20px;
+	margin-left: 10px;
+}
+.orderInsidePicture{
+	height: 200px;
+	width: 110px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 35px;
+	margin-right: 35px;
+	vertical-align: middle;
+}
+.orderInsidePicture img{
+	margin-top: 20px;
+	max-height: 170px;
+	max-width: 110px;
+}
+.orderInsideName{
+	line-height: 18px;
+	font-family: "ScepticaBold";
+	font-size: 16px;
+	color: #7197d0;
+	letter-spacing: 1.5px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.orderInsideDetails{
+	font-family: "Sceptica";
+	font-size: 14px;
+	color: #7197d0;
+	letter-spacing: 1.5px;
+	margin-bottom: 20px;
+}
+.orderInsideArticle{
+	font-family: "CenturyGothicRegular";
+	font-size: 13px;
+	color: #00b0ad;
+	margin-bottom: 10px;
+}
+.orderInsidePrice{
+	font-family: "Sceptica";
+	font-size: 20px;
+	color: #343537;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+.orderInsidePrice span{
+	font-size: 16px;
+}
+.orderInsideProducts{
+	display: inline-block;
+	height: 200px;
+	vertical-align: middle;
+	padding-top: 20px;
+	width: 300px;
+}
+.orderInsideSeparator{
+	width: 85px;
+	height: 1px;
+	background-color: #00b0ad;
+	position: relative;
+	right: 10px;
+	margin-bottom: 10px;
+}
+.orderInsideCount.medicationCountView{
+	border: 1px solid #58595b;
+	bottom: 0;
+	margin-left: 0;
+}
+.orderInsideCount.medicationCountView:hover, .orderInsideCount.medicationCountView:active, .orderInsideCount.medicationCountView:focus{
+	border: 1px solid #00b0ad;
+}
+.orderInsideLeftBlock{
+	display: inline-block;
+}
+.orderInsideRightBlock{
+	display:inline-block;
+	height: 200px;
+	vertical-align: middle;
+}
+.orderInsideCountTitle.medicationCountTitle{
+	padding-left: 0;
+	margin-bottom: 5px;
+}
+.orderInsideCountBlock{
+	padding-top: 50px;
+  padding-left: 50px;
+}
+.orderInsideChColor{
+	color: #58595b !important;
+}
+.orderInsideMPriceTitle{
+	padding-top: 5px;
+	font-family: "ScepticaMedium";
+	font-size: 14px;
+	color: #58595b;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-align: right;
+	padding-right: 35px;
+	margin-bottom: 0;
+}
+.orderInsideMPriceTitle span{
+	letter-spacing: 1.5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 24px;
+	color: #58595b;
+	font-family: "ScepticaBlack";
+}
+.orderInsideBottomP.myOfferTableProducts{
+	border: 2px solid #4dc1a7;
+}
+.orderInsideDeliveryText{
+	font-family: "ScepticaLite";
+	color: #58595b;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	margin-bottom: 5px;
+}
+.orderInsideDeliveryText span{
+	padding-left: 15px;
+	font-family: "ScepticaMedium";
+}
+.orderInsideDelivery.col-sm-12{
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 40px;
+}
+.orderInDelivAd{
+	padding-left: 23px !important;
+}
+.orderInDelivPay{
+	padding-left: 30px !important;
+}
+.orderInDelivStat{
+	padding-left: 19px !important;
+}
+.orderInDelivData{
+	padding-left: 33px !important;
+}
+.toggleAccordeon.navbar-toggle{
+	display: block !important;
+}
+.catalogShowBtn{
+	width: 100%;
+	display: none;
+	height: 50px;
+	background-color: #00B0AD;
+}
+.catalogShowMed{
+	width: 80%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 18px;
+	font-family: "ScepticaItalic";
+	color: white;
+	padding-left: 100px;
+}
+.catalogNavIc{
+	background-color: white;
+}
+.dropDownAccordeon li a{
+	letter-spacing: 1.5px;
+}
+.cardOldPrice{
+	font-family: "ScepticaLite";
+	font-size: 24px;
+	color: #ff4622;
+	position: relative;
+	text-decoration: line-through;
+}
+.cardProductionLikeBtn > .active > .productionCardLikeImg{
+	background-position: 14px -44px;
+}
+.productionBuyBlock > .active > .productionLikeIcon{
+	background-position: 0px -59px;
+}
+.productionBuyBlock > .active > .productionBuyIcon{
+	background-position: 0px -54px;
+}
+.medicationDetailsBlock .cardOldPrice{
+	font-size: 21px;
+}
+.blogComments{
+	display: block;
+}
+.leaveCmtText{
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #58595b;
+	letter-spacing: 1.2px;
+}
+.leaveCmtTitle{
+	margin-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 565px;
+	height: 50px;
+	border: 1px solid #d0d0d2;
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTitle:focus, .leaveCmtTitle:focus, .leaveCmtTitle:active{
+	border-left: 3px solid #00b0ad;
+	outline: 0;
+}
+.leaveCmtTitle::-webkit-input-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTitle:-moz-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTitle::-moz-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTitle:-ms-input-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTextArea{
+	padding-top: 15px;
+	height: 120px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 565px;
+	border: 1px solid #d0d0d2;
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+	margin-bottom: 25px;
+}
+.leaveCmtTextArea:focus, .leaveCmtTextArea:focus, .leaveCmtTextArea:active{
+	border-left: 3px solid #00b0ad;
+	outline: 0;
+}
+.leaveCmtTextArea::-webkit-input-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTextArea:-moz-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTextArea::-moz-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtTextArea:-ms-input-placeholder {
+	font-family: "ScepticaLite";
+	font-size: 14px;
+	color: #63656a;
+}
+.leaveCmtWrapper{
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 110px;
+}
+.voteMark{
+	margin-left: 45px;
+	background: url(../img/commentVote.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-position: 0px -4px;
+	cursor: pointer;
+}
+.voteMarkBlock{
+	float: right;
+}
+.voteMark:hover, .voteMark:focus, .voteMark:active{
+	background-position: 0px -95px;
+}
+.voteMarkBlock .active.voteMark{
+	background-position: 0px -95px;
+}
+.voteMark p{
+	font-family: "GothamBold";
+	font-size: 24px;
+	color: #63656a;
+	text-align: center;
+	padding-top: 5px;
+	transition: .2s;
+}
+.voteMark p.active{
+	color: #7dcba3;
+}
+.voteMark p:hover, .voteMark p:focus, .voteMark p:active{
+	color: #7dcba3;
+}
+.votePostText{
+	float: left;
+  width: 70px;
+}
+.votePostText .leaveCmtText{
+	line-height: 15px;
+	padding-top: 10px;
+}
+.leaveCmtWrapper .blogButton{
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+.blogPleaseRegister{
+	display: block;
+}
+.blogLeaveCmt{
+	display: none;
+}
+.searchStart{
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	padding-top: 15px;
+	float: right;
+	padding-right: 10px;
+}
+.searchInputFix.searchInputMin.searchInput{
+	border-bottom: 1px solid white;
+	background-color: transparent;
+	width: 50%;
+	padding-left: 15px;
+	font-family: "ScepticaItalic";
+	color: white;
+	display: block;
+	padding-bottom: 5px;
+}
+.searchInputFix.searchInputMin.searchInput::-webkit-input-placeholder {
+	padding-left: 0;
+	color: white;
+	opacity: 1;
+}
+.searchInputFix.searchInputMin.searchInput:-moz-placeholder {
+	padding-left: 0;
+	color: white;
+	opacity: 1;
+}
+.searchInputFix.searchInputMin.searchInput::-moz-placeholder {
+	padding-left: 0;
+	color: white;
+	opacity: 1;
+}
+.searchInputFix.searchInputMin.searchInput:-ms-input-placeholder {
+	padding-left: 0;
+	color: white;
+	opacity: 1;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: white !important;
+}
+.searchCatalogFix.searchCatalogBtn{
+	height: 50px;
+}
+.searchCatalogMinFix.searchInputCatalogMin.searchInputCatalog.searchInputMin.searchInput{
+	padding-left: 15px;
+	width: 50% !important;
+}
+.kabinetNavigationTitle.active .kabinetNavigationIco{
+	background-position: 7px -25px !important;
+	background-color: #4dc1a7 !important;
+}
