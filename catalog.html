@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Каталог</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="<?= RS ?>img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?= RS ?>img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?= RS ?>img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?= RS ?>img/favicon/apple-touch-icon-114x114.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="<?= RS ?>libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="<?= RS ?>libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= RS ?>libs/animate/animate.css">
+    <link rel="stylesheet" href="<?= RS ?>libs/ion.rangeSlider-2.1.4/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="<?= RS ?>libs/ion.rangeSlider-2.1.4/css/ion.rangeSlider.skinFlat.css" />
+
+    <link rel="stylesheet" href="<?= RS ?>css/fonts.css">
+    <link rel="stylesheet" href="<?= RS ?>css/main.css">
+    <link rel="stylesheet" href="<?= RS ?>css/media.css">
+    <link rel="stylesheet" href="<?= RS ?>css/owl.carousel.css">
+    <link rel="stylesheet" href="<?= RS ?>css/owl.theme.css">
+    <!-- ! Add jQuery library -->
+    <script type="text/javascript" src="<?= RS ?>libs/fancyBox/lib/jquery-1.10.2.min.js"></script>
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="<?= RS ?>libs/fancyBox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqj40ibrbZgrrofyvoSHgN2dc6XuDCrPI&language=ru"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="<?= RS ?>libs/fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="<?= RS ?>libs/fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Add Button helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="<?= RS ?>libs/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="<?= RS ?>libs/fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="<?= RS ?>libs/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="<?= RS ?>libs/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!-- Add Media helper (this is optional) -->
+    <script type="text/javascript" src="<?= RS ?>libs/fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <script src="<?= RS ?>libs/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+<div class="catalogHeaderMenu">
+    <header class="header сatalogHeader">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 header__nav catalogHeaderNav">
+                    <nav class="navbar navbar-default catalogNavDef">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar catalogIconBar"></span>
+                                    <span class="icon-bar catalogIconBar"></span>
+                                    <span class="icon-bar catalogIconBar"></span>
+                                </button>
+                                <form action="#" name="searchModalForm" method="post" class="searchForm searchFormMin">
+                                    <button type="button" name="button" class="search__a search__aMin">
+                                        <span class="glyphicon glyphicon-search catalogSearchIco" aria-hidden="true"></span>
+                                    </button>
+                                    <input type="input" name="name" class="searchInput searchInputMin searchInputCatalog searchInputCatalogMin searchCatalogMinFix" value="" placeholder="Что ищем?">
+                                </form>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="catalogGreyCustom"><a href="<?= RS ?>catalog.php" class="catalogNavTitle">Online Аптека <span class="sr-only">(current)</span></a></li>
+                                    <li class="catalogGreyCustom"><a href="<?= RS ?>infob.php" class="catalogNavTitle">Инфобюро</a></li>
+                                    <li class="catalogGreyCustom"><a href="<?= RS ?>blog.php" class="catalogNavTitle">Блог</a></li>
+                                    <li class="catalogGreyCustom"><a href="<?= RS ?>contacts.php" class="catalogNavTitle">Контакты</a></li>
+                                    <li class="catalogGreyCustom"><a href="#" class="catalogNavTitle">Франчейзинг</a></li>
+                                    <li class="catalogGreyCustom">
+                                        <form action="#" name="searchModalForm" method="post" class="searchForm">
+                                            <button type="button" name="button" class="searchCatalogBtn searchCatalogFix" id="searchCatalogInput">
+                                                <span class="glyphicon glyphicon-search catalogSearchIco" aria-hidden="true"></span>
+                                            </button>
+                                            <div class="searchCatalogBlock">
+                                                <input type="input" name="name" class="searchInput searchInputMin searchInputCatalog" value="" placeholder="Что ищем?">
+                                                <button type="button" name="button" class="searchStart">
+                                                    <span class="glyphicon glyphicon-search catalogSearchIco" aria-hidden="true"></span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+                <div class="col-sm-12 header__block catalogHeaderBlock">
+                    <div class="col-sm-2 header__left_bg"></div>
+                    <div class="col-sm-2 header__right_bg"></div>
+                    <div class="col-sm-7 header__center_content">
+                        <div class="col-xs-4 header__enter catalogHeaderEnter">
+                            <a href="#" class="catalogNameUser">Людмила</a>
+                            <a href="#" class="header__reg_title">Выйти</a>
+                        </div>
+                        <div class="col-xs-4 header__enter catalogHeaderEnter catalogNoUser">
+                            <a href="#" class="header__enter_title">Вход</a>
+                            <a href="#" class="header__reg_title">Выйти</a>
+                        </div>
+                        <div class="col-xs-6 header__logo catalogHeaderLogo">
+                            <img src="<?= RS ?>img/logo.png" alt="" class="header__logo_img">
+                        </div>
+                        <div class="col-xs-2 header__contacts catalogHeaderContacts">
+                            <div class="header__phone_block">
+                                <p class="header__phone">044 404 5126</p>
+                            </div>
+                            <div class="icons__buy_like_block">
+                                <a href="#" class="icon__buy" data-toggle="modal" data-target="#modal-2">
+                                    <div class="icon__buy_img_blockBuy"></div>
+                                    <div class="icon__buy_block">
+                                        <span>5</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="icon__buy">
+                                    <div class="icon__buy_img_blockLike"></div>
+                                    <div class="icon__buy_block">
+                                        <span>0</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="catalogDropMenu">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="mobileCatalogTitle">Каталог</p>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Медикаменты</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Лечебная косметика</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Витамины и бады</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Детские товары</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Медицинские товары</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Гигиена и уход</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сезонные товары</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Оптика</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Медосмотр</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Наборы</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">АКЦИи</a>
+                    </li>
+                    <li class="dropdown dropdownClick dropdownHover">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Правильное питание</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<section class="catalogMainBlock">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 breadCrumbBlock">
+                <ol class="breadcrumb breadCrumbCustom">
+                    <li class="breadCrumbMenu"><a href="#">Главная</a></li>
+                    <li class="breadCrumbMenu"><a href="#">Online аптека</a></li>
+                    <li class="breadCrumbMenu active"><a href="#">Медикаменты</a></li>
+                </ol>
+            </div>
+
+            <div class="col-sm-3 accordeonCatalog">
+                <div class="row">
+                    <ul class="dropDownAccordeon">
+                        <div class="catalogShowBtn">
+                            <p class="catalogShowMed">Медикаменты</p>
+                            <button type="button" class="navbar-toggle toggleAccordeon" data-toggle="collapse" data-target=".dropDownMainAcc">
+                                <span class="icon-bar catalogNavIc"></span>
+                                <span class="icon-bar catalogNavIc"></span>
+                                <span class="icon-bar catalogNavIc"></span>
+                            </button>
+                        </div>
+                        <div class="dropDownMainAcc collapse in" data-toggle="collapse2">
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Лекарство от зубной боли, от стоматита <span>(139)</span></a></li>
+                                <ul id="demo" class="collapse accordeonCollapse">
+                                    <li><a href="blog.php">Препарат от зубов</a></li>
+                                    <li><a href="main.php">Препарат от зубной боли</a></li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo1" data-toggle="collapse" class="medicationAccordeonLi"><a href="blog.php" class="medicationAccordeonName">Препараты для желудка <span></span></a></li>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo2" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Препараты для кишечника <span>(42)</span></a></li>
+                                <ul id="demo2" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo3" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Препараты для печени <span>(58)</span></a></li>
+                                <ul id="demo3" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo4" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Препараты от диабета <span>(37)</span></a></li>
+                                <ul id="demo4" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo5" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Сердечные препараты <span>(95)</span></a></li>
+                                <ul id="demo5" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo6" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Сосудистые препараты <span></span></a></li>
+                                <ul id="demo6" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo7" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Препараты для лечения анемии <span>(58)</span></a></li>
+                                <ul id="demo7" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo8" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Препараты от давления <span>(143)</span></a></li>
+                                <ul id="demo8" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo9" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Препараты при кашле <span>(58)</span></a></li>
+                                <ul id="demo9" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo10" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Противоаллергические <span>(58)</span></a></li>
+                                <ul id="demo10" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo11" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Препарати от простуды <span>(58)</span></a></li>
+                                <ul id="demo11" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo12" data-toggle="collapse" class="medicationAccordeonLi"><a data-target="#demo12" data-toggle="collapse" class="medicationAccordeonName">Для глаз <span>(89)</span></a></li>
+                                <ul id="demo12" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo13" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Капли для ушей <span>(10)</span></a></li>
+                                <ul id="demo13" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                            <div class="dropDownAccordeonBlock">
+                                <li data-target="#demo14" data-toggle="collapse" class="medicationAccordeonLi"><a class="medicationAccordeonName">Кости и суставы <span>(23)</span></a></li>
+                                <ul id="demo14" class="collapse accordeonCollapse">
+                                    <li>Препарат от зубов</li>
+                                    <li>Препарат от зубной боли</li>
+                                    <li>Препарат от стоматита</li>
+                                    <li>Препарат от боли</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-9 catalogProductBlock">
+                <p class="catalogProductTitle">Медикаменты <span class="catalogProductSpan">каталог</span></p>
+                <div class="catalogSlider">
+                    <div id="owl-demo2" class="owl-carousel owl-theme">
+                        <div class="item"><img src="img/catalogCarousel.png"></div>
+                        <div class="item"><img src="img/catalogCarousel.png"></div>
+                        <div class="item"><img src="img/catalogCarousel.png"></div>
+                        <div class="item"><img src="img/catalogCarousel.png"></div>
+                    </div>
+                </div>
+                <div class="catalogSelectsBlock">
+                    <div class="sortingBlock2">
+                        <div class="catalogFirstSelect">
+                            <p class="catalogShowVal" id="catalogShowVal2">На странице</p>
+                        </div>
+                        <div class="catalogFirstSelectContent unVisibleSelect" id="catalogFirstSelectContent">
+                            <p class="catalogFirstSelectVal" id="catalogPage">На странице</p>
+                            <p class="catalogFirstSelectVal" id="catalog20">20</p>
+                            <p class="catalogFirstSelectVal" id="catalog40">40</p>
+                        </div>
+                    </div>
+                    <div class="sortingBlock1">
+                        <div class="catalogFirstSelect">
+                            <p class="catalogShowVal" id="catalogShowVal1">Позиция</p>
+                        </div>
+                        <div class="catalogFirstSelectContent unVisibleSelect" id="catalogFirstSelectContent">
+                            <p class="catalogFirstSelectVal" id="catalogPosition">На странице</p>
+                            <p class="catalogFirstSelectVal" id="catalogName">Название</p>
+                            <p class="catalogFirstSelectVal" id="catalogPrice">Цена</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogProductionBlock">
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 catalogProductionGrid wow fadeInUp">
+                        <div class="productionDetailsBlock">
+                            <div class="productionImgBlock">
+                                <img src="img/productionImg.png" alt="" class="productionImg" />
+                                <a href="#" class="productionAddHoverLink"><div class="productionAddHover"></div></a>
+                            </div>
+                            <p class="productionTitle">Das Gesunde</p>
+                            <p class="productionDetails">Детские желатиновые мишки 60шт в упаковке</p>
+                            <div class="productionPriceAndBuy">
+                                <div class="productionBuyBlock">
+                                    <a href="#"><div class="productionLikeIcon"></div></a>
+                                    <a href="#"><div class="productionBuyIcon"></div></a>
+                                </div>
+                                <div class="productionPriceBlock">
+                                    <p class="productionPrice">200,40 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 pageCounterGrid wow fadeInUp" >
+                    <div class="pageCounterBlock1">
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">1</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">2</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">3</a>
+                        </div>
+                    </div>
+                    <div class="pageCounterBlock2">
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">1</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">...</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">8</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">9</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">10</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">...</a>
+                        </div>
+                        <div class="pageCounterWrapper">
+                            <a href="#" class="pageCounterNum">30</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<footer class="footer wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="footer_top col-sm-12">
+                <div class="col-sm-6 footer__top_block1" >
+                    <div class="footer__logo"></div>
+                    <div class="footer__contacts">
+                        <p class="footer__contacts_phone"><span>044 </span>4045 126</p>
+                        <p class="footer__contacts_adress">Киев, ул. Героев Севастополя, 30</p>
+                    </div>
+                    <div class="footer__map"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="footer__soc_block">
+                        <div class="footer__soc">
+                            <div class="footer__soc_wrapper">
+                                <div class="footer__soc_icon"></div>
+                            </div>
+                        </div>
+                        <div class="footer__soc">
+                            <div class="footer__soc_wrapper">
+                                <div class="footer__soc_icon footer__soc_icon2"></div>
+                            </div>
+                        </div>
+                        <div class="footer__soc">
+                            <div class="footer__soc_wrapper">
+                                <div class="footer__soc_icon footer__soc_icon3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pay__variants">
+                        <p class="pay__variants_title">Способы оплаты</p>
+                        <div class="pay__variants_icon">
+                            <div class="pay__variants_icon_privat"></div>
+                            <div class="pay__variants_icon_visa"></div>
+                            <div class="pay__variants_icon_master"></div>
+                            <div class="pay__variants_icon_maestro"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 footer_bottom">
+                <div class="prava">
+                    <p class="final__text final__text_left">© 2016 BFM. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+                </div>
+                <div class="kam_studio"><p class="final__text final__text_right">Сделано в KAM STUDIO</p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- script order matters! -->
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="<?= RS ?>js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script src="<?= RS ?>libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?= RS ?>libs/waypoints/waypoints.min.js"></script>
+<script src="<?= RS ?>libs/animate/animate-css.js"></script>
+<script src="<?= RS ?>libs/plugins-scroll/plugins-scroll.js"></script>
+<script src="<?= RS ?>libs/ion.rangeSlider-2.1.4/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+
+<script src="<?= RS ?>js/common.js"></script>
+<script src="<?= RS ?>js/jquery.measurer.js"></script>
+<script src="<?= RS ?>js/jquery.gradienttext.js"></script>
+<script src="<?= RS ?>js/owl.carousel.min.js"></script>
+
+<script src="libs/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #00b0ad url(http://hello-site.ru//main/images/preloads/grid.svg) center center no-repeat;background-size:41px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},600);};</script>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+</body>
+</html>
